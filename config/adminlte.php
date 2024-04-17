@@ -108,7 +108,7 @@ return [
     */
 
     'preloader' => [
-        'enabled' => true,
+        'enabled' => false,
         'img' => [
             'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
             'alt' => 'AdminLTE Preloader Image',
@@ -193,7 +193,7 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-light-primary elevation-4',
+    'classes_sidebar' => 'sidebar-light-maroon elevation-4',
     'classes_sidebar_nav' => '',
     'classes_topnav' => 'navbar-white navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
@@ -328,18 +328,32 @@ return [
             'icon' => 'fas fa-fw fa-ellipsis-h',
         ],
 
-
-        [
-            'text' => 'Categoria',
-            'url'  => 'categoria',
-            'icon' => 'fas fa-fw fa-user',
-            'can' => 'is_admin',
-        ],
-
         [
             'text' => 'Postagem',
             'url'  => 'postagem',
             'icon' => 'fas fa-fw fa-edit',
+        ],
+
+        [
+            'text'    => 'Admin',
+            'icon'    => 'fas fa-fw fa-newspaper',
+            'can'     => 'is_admin',
+            'submenu' => [
+                [
+                    'text' => 'Painel',
+                    'url'  => 'painel',
+                    'icon' => 'fas fa-fw fa-newspaper',
+                    'can'  => 'is_admin',
+                ],
+                [
+                    'text' => 'Categoria',
+                    'url'  => 'categoria',
+                    'icon' => 'fas fa-fw fa-user',
+                    'can'  => 'is_admin',
+                ],
+        ],
+
+
         ],
 
         [
@@ -351,6 +365,8 @@ return [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
+
+
 
         // Sidebar items:
         /*[
