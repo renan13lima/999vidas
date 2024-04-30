@@ -88,6 +88,8 @@
                 </div>
             @endcan
 
+
+
             <main id="main" class="mt-5">
                 <ul class="nav nav-tabs justify-content-center">
                     <li class="nav-item">
@@ -138,6 +140,7 @@
                         @endforeach
                     </div>
                 </div>
+
 
             </main>
 

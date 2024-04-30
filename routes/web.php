@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\PostagemController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PerfilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,8 +29,14 @@ Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
 
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+    Route::get('/explorar', function () {
+        return view('explorar');
+    });
+
+    Route::get('/biblioteca', [App\Http\Controllers\BibliotecaController::class, 'biblioteca'])->name('biblioteca');
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/perfil', [App\Http\Controllers\PerfilController::class, 'perfil'])->name('perfil.perfil');
     // ------------------------------ CRUD CATEGORIA ---------------------------------------------
 
     // LISTAR GET

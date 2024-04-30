@@ -299,29 +299,29 @@ return [
         ],
         [
             'text' => 'Explorar',
-            'url'  => '#',
+            'url'  => 'explorar',
             'icon' => 'fas fa-fw fa-search',
         ],
         [
+            'text' => 'Biblioteca',
+            'url'  => 'biblioteca',
+            'icon' => 'fas fa-fw fa-book',
+        ],
+        [
+            'text' => 'Perfil',
+            'url'  => 'perfil',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        /*[
             'text' => 'Notificações',
             'url'  => '#',
             'icon' => 'fas fa-fw fa-bell',
         ],
         [
-            'text' => 'Mensagens',
-            'url'  => '#',
-            'icon' => 'fas fa-fw fa-envelope',
-        ],
-        [
             'text' => 'Estante',
             'url'  => '#',
             'icon' => 'fas fa-fw fa-book',
-        ],
-        [
-            'text' => 'Perfil',
-            'url'  => '#',
-            'icon' => 'fas fa-fw fa-user',
-        ],
+        ], */
         [
             'text' => 'Mais',
             'url'  => '#',
