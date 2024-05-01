@@ -16,67 +16,232 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-        <link rel="stylesheet" href="#">
-
         <style>
-            nav {
-                color: #604b32;
-                background: rgb(247, 246, 240);
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
             }
-            /*         LOGIN
-            .btn {
-                color: rgb(88, 75, 56);
+            h1 {
+                color: #4D3E3E;
+                font-weight: bold;
+            }
+            h5 {
+                color: #4D3E3E;
+                font-weight: bold;
+            }
+            .biblioteca img {
+                width: 100px;
+                height: 100%;
+                padding: 5px;
+                border-radius: 5%;
+            }
+            .buscar {
+                color: #4b4044;
                 background: #d4cec3;
             }
-
-            .btn:hover {
-                background: #d4cec3;
-            }*/
-
-            /*        FOOTER        */
-            footer {
-                background: #604b32;
-                color: rgb(247, 246, 240);
+            .buscar a:hover {
+                color: #d4cec3;
+                background-color: #604b32;
+            }
+            .burlywood {
+                background-color: #deb887;
             }
         </style>
     </head>
 
     <body>
         <!--  NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <section class="my-3 text-center">
+            <h1>BIBLIOTECA COMPARTILHADA</h1>
 
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://thatdev.neocities.org/milvidas/imgs/1.png" alt="Bootstrap" width="30"
-                        height="24">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://thatdev.neocities.org/milvidas/home">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://thatdev.neocities.org/milvidas/sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://thatdev.neocities.org/milvidas/contato">Contato</a>
-                        </li>
-                    </ul>
+            <!-- OS MAIS VENDIDOS           -->
+            <div class="row biblioteca text-center mt-5 py-4">
+                <h5>OS MAIS VENDIDOS</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div>
+                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg"
+                                class="img-fluid" alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg" class="img-fluid"
+                                alt="capa do livro O pequeno Principe" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg"
+                                class="img-fluid" alt="capa do livro Alice no Pais das Maravilhas" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg"
+                                class="img-fluid" alt="capa do livro Alice Atraves do Espelho" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+                                class="img-fluid" alt="capa do livro A princesa que Salva a Si mesmo nesse Livro"
+                                width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg"
+                                class="img-fluid" alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg" class="img-fluid"
+                                alt="capa do livro O pequeno Principe" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg"
+                                class="img-fluid" alt="capa do livro Alice no Pais das Maravilhas" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg"
+                                class="img-fluid" alt="capa do livro Alice Atraves do Espelho" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+                                class="img-fluid" alt="capa do livro A princesa que Salva a Si mesmo nesse Livro"
+                                width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg" class="img-fluid"
+                                alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg" class="img-fluid"
+                                alt="capa do livro O pequeno Principe" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg" class="img-fluid"
+                                alt="capa do livro Alice no Pais das Maravilhas" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg" class="img-fluid"
+                                alt="capa do livro Alice Atraves do Espelho" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+                                class="img-fluid" alt="capa do livro A princesa que Salva a Si mesmo nesse Livro"
+                                width=""></a>
+                    </div>
                 </div>
             </div>
-        </nav>
 
-        <!-- INSERIR CONTEÚDO AQUI -->
+
+            <!--   OS MAIS CURTIDOS          -->
+            <div class="row biblioteca text-center mt-5 py-4 burlywood ">
+                <h5>OS MAIS CURTIDOS PELA COMUNIDADE</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg" class="img-fluid"
+                                alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg" class="img-fluid"
+                                alt="capa do livro O pequeno Principe" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg" class="img-fluid"
+                                alt="capa do livro Alice no Pais das Maravilhas" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg" class="img-fluid"
+                                alt="capa do livro Alice Atraves do Espelho" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+                                class="img-fluid" alt="capa do livro A princesa que Salva a Si mesmo nesse Livro"
+                                width=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--   LANÇAMENTOS          -->
+            <div class="row biblioteca text-center mt-5 py-4">
+                <h5>LANÇAMENTOS</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg" class="img-fluid"
+                                alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg" class="img-fluid"
+                                alt="capa do livro O pequeno Principe" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg" class="img-fluid"
+                                alt="capa do livro Alice no Pais das Maravilhas" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg" class="img-fluid"
+                                alt="capa do livro Alice Atraves do Espelho" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+                                class="img-fluid" alt="capa do livro A princesa que Salva a Si mesmo nesse Livro"
+                                width=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--   GENERO - ROMANCE        -->
+            <div class="row biblioteca text-center mt-5 py-4 burlywood">
+                <h5>ROMANCE</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg" class="img-fluid"
+                                alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg" class="img-fluid"
+                                alt="capa do livro O pequeno Principe" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg" class="img-fluid"
+                                alt="capa do livro Alice no Pais das Maravilhas" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg" class="img-fluid"
+                                alt="capa do livro Alice Atraves do Espelho" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img
+                                src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+                                class="img-fluid" alt="capa do livro A princesa que Salva a Si mesmo nesse Livro"
+                                width=""></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
 
         <!--     RODAPE       -->
-        <footer class="rodape text-center pb-4 fixed-bottom">
+        <footer class="rodape text-center pb-4">
             <div class="font-monospace p-2">M I L V I D A S</div>
         </footer>
 
@@ -88,5 +253,6 @@
         <!--     Font Awesome       -->
         <script src="https://kit.fontawesome.com/651d079c52.js" crossorigin="anonymous"></script>
     </body>
+
     </html>
 @endsection

@@ -321,12 +321,12 @@ return [
             'text' => 'Estante',
             'url'  => '#',
             'icon' => 'fas fa-fw fa-book',
-        ], */
+        ],
         [
             'text' => 'Mais',
             'url'  => '#',
             'icon' => 'fas fa-fw fa-ellipsis-h',
-        ],
+        ],*/
 
         [
             'text' => 'Postagem',
@@ -336,19 +336,19 @@ return [
 
         [
             'text'    => 'Admin',
-            'icon'    => 'fas fa-fw fa-newspaper',
+            'icon'    => 'fas fa-fw fa-gear',
             'can'     => 'is_admin',
             'submenu' => [
                 [
                     'text' => 'Painel',
                     'url'  => 'painel',
-                    'icon' => 'fas fa-fw fa-newspaper',
+                    'icon' => 'fas fa-fw fa-chart-bar',
                     'can'  => 'is_admin',
                 ],
                 [
                     'text' => 'Categoria',
                     'url'  => 'categoria',
-                    'icon' => 'fas fa-fw fa-user',
+                    'icon' => 'fas fa-fw fa-tags',
                     'can'  => 'is_admin',
                 ],
         ],

@@ -24,10 +24,6 @@
                 box-sizing: border-box;
                 font-family: 'Poppins', sans-serif;
             }
-            nav {
-                color: #604b32;
-                background: rgb(247, 246, 240);
-            }
             h1 {
                 color: #4D3E3E;
                 font-weight: bold;
@@ -113,50 +109,15 @@
                 color: rgb(247, 246, 240);
             }
         </style>
-
     </head>
 
     <body>
 
         <!--  NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://thatdev.neocities.org/milvidas/imgs/1.png" alt="Bootstrap" width="30"
-                        height="24">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://thatdev.neocities.org/milvidas/sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://thatdev.neocities.org/milvidas/contato">Contato</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
-
         <div class="container-fluid">
             <main id="main">
                 <div class="container">
                     <section>
-                        <div class="text-center">
-                            <h1 class="font-monospace">M I L V I D A S</h1>
-                        </div>
 
                         <!-- CARROSSEL -->
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

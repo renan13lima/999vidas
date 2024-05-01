@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use App\Models\Postagem;
+use App\Models\Categoria;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -25,6 +28,10 @@ class HomeController extends Controller
     public function index()
     {
         $postagens = Postagem::orderBy('id', 'desc')->get();
-        return view('home', ['postagens' => $postagens]);
+        $categorias = Categoria::orderBy('id', 'desc')->get();
+        $autores = User::orderBy('id', 'desc')->get();
+
+        return view('home', ['postagens' => $postagens, 'categorias' => $categorias, 'autores' => $autores]);
+
     }
 }
