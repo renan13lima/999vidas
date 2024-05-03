@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Painel;
+use App\Models\User;
+use App\Models\Postagem;
 
 class PainelController extends Controller
 {
@@ -12,7 +14,9 @@ class PainelController extends Controller
      */
     public function painel()
     {
-        return view('painel');
+        $usuarios = User::count();
+        $posts = Postagem::count();
+        return view('painel', ['usuarios' => $usuarios], ['posts' => $posts]);
     }
 
     /**

@@ -34,5 +34,9 @@ class CategoriaSeeder extends Seeder
             'nome' => 'Outros',
         ]);
 
+        DB::table('categorias')->insert([
+            'nome' => 'Autoral',
+        ]);
+
     }
 }

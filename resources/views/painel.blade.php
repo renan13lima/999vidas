@@ -16,26 +16,8 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Poppins', sans-serif;
-            }
-
-            h1 {
-                color: #4D3E3E;
-                font-weight: bold;
-            }
-
-            h5 {
-                color: #4D3E3E;
-                font-weight: bold;
-            }
-        </style>
+        <!-- Custom CSS -->
+        <link href="{{ url('assets/css/painel.css') }}" rel="stylesheet" type="text/css" media="all">
     </head>
 
     <body>
@@ -49,7 +31,7 @@
                 <div class="col-lg-3 col-6">
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h3>01</h3>
+                            <h3>{{ $usuarios }}</h3>
                             <p>Usuários cadastrados</p>
                         </div>
                         <div class="icon">
@@ -62,7 +44,7 @@
                 <div class="col-lg-3 col-6">
                     <div class="small-box bg-success">
                         <div class="inner">
-                            <h3>02</h3>
+                            <h3>{{ $posts }}</h3>
                             <p>Postagens feitas</p>
                         </div>
                         <div class="icon">
@@ -153,21 +135,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             <!--    BOOTSTRAP      -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

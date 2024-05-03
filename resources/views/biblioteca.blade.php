@@ -16,46 +16,14 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Poppins', sans-serif;
-            }
-            h1 {
-                color: #4D3E3E;
-                font-weight: bold;
-            }
-            h5 {
-                color: #4D3E3E;
-                font-weight: bold;
-            }
-            .biblioteca img {
-                width: 100px;
-                height: 100%;
-                padding: 5px;
-                border-radius: 5%;
-            }
-            .buscar {
-                color: #4b4044;
-                background: #d4cec3;
-            }
-            .buscar a:hover {
-                color: #d4cec3;
-                background-color: #604b32;
-            }
-            .burlywood {
-                background-color: #deb887;
-            }
-        </style>
+        <!-- Custom CSS -->
+        <link href="{{ url('assets/css/biblioteca.css') }}" rel="stylesheet" type="text/css" media="all">
     </head>
 
     <body>
         <!--  NAVBAR -->
-        <section class="my-3 text-center">
-            <h1>BIBLIOTECA COMPARTILHADA</h1>
+        <section class="text-center">
+            <h1 class="pt-5">BIBLIOTECA COMPARTILHADA</h1>
 
             <!-- OS MAIS VENDIDOS           -->
             <div class="row biblioteca text-center mt-5 py-4">
@@ -235,8 +203,6 @@
                     </div>
                 </div>
             </div>
-
-
 
         </section>
 

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    color: #4D3E3E;
+    font-weight: bold;
+}
+h5 {
+    color: #4D3E3E;
+    font-weight: bold;
+}
+.biblioteca img {
+    width: 100px;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5%;
+}
+.buscar {
+    color: #4b4044;
+    background: #d4cec3;
+}
+.buscar a:hover {
+    color: #d4cec3;
+    background-color: #604b32;
+}
+.burlywood {
+    background-color: #deb887;
+}

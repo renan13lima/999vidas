@@ -29,15 +29,14 @@ Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
 
-
-    Route::get('/explorar', function () {
-        return view('explorar');
+    Route::get('/biblioteca', function () {
+        return view('biblioteca');
     });
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::get('/biblioteca', [App\Http\Controllers\BibliotecaController::class, 'biblioteca'])->name('biblioteca');
     Route::get('/perfil', [App\Http\Controllers\PerfilController::class, 'perfil'])->name('perfil.perfil');
     Route::get('/painel', [App\Http\Controllers\PainelController::class, 'painel'])->name('painel');
+    Route::get('/explorar', [App\Http\Controllers\ExplorarController::class, 'explorar'])->name('explorar');
     // ------------------------------ CRUD CATEGORIA ---------------------------------------------
 
     // LISTAR GET
