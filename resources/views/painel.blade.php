@@ -28,7 +28,7 @@
 
             <div class="row">
 
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-4 col-6">
                     <div class="small-box bg-info">
                         <div class="inner">
                             <h3>{{ $usuarios }}</h3>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-4 col-6">
                     <div class="small-box bg-success">
                         <div class="inner">
                             <h3>{{ $posts }}</h3>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-4 col-12">
                     <div class="small-box bg-warning">
                         <div class="inner">
                             <h3>03</h3>
@@ -67,18 +67,6 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-6">
-                    <div class="small-box bg-danger">
-                        <div class="inner">
-                            <h3>04</h3>
-                            <p>Usuários online</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-pie-graph"></i>
-                        </div>
-                        <div class="small-box-footer">Conteúdo</div>
-                    </div>
-                </div>
             </div>
 
             <div class="row">

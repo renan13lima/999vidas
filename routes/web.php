@@ -25,6 +25,18 @@ Route::get('/', function () {
 
 Route::get('/', [BlogController::class, 'index'])->name('blog.index');
 
+Route::get('/inicio', function () {
+    return view('inicio');
+});
+
+Route::get('/sobre', function () {
+    return view('sobre');
+});
+
+Route::get('/contato', function () {
+    return view('contato');
+});
+
 Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
