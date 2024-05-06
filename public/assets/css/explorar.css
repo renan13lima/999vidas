@@ -5,6 +5,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+main {
+    padding-top: 35px;
+    padding-bottom: 1px;
+}
+
 h1 {
     color: #4D3E3E;
     font-weight: bold;

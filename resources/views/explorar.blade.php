@@ -11,22 +11,43 @@
 
         <title>Explorar</title>
 
+        <!--    BOOTSTRAP      -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+        <!--    BOOTSTRAP  ICONS    -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Custom CSS -->
         <link href="{{ url('assets/css/explorar.css') }}" rel="stylesheet" type="text/css" media="all">
+
     </head>
 
     <body>
-
-        <!--  NAVBAR -->
         <div class="container-fluid">
             <main id="main">
                 <div class="container">
                     <section>
+                        <div class="text-center">
+                            <h1 class="font-monospace">M I L V I D A S</h1>
+                        </div>
 
                         <!-- CARROSSEL -->
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -40,15 +61,18 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="{{ url('/images/post-biblion.jpg') }}" class="d-block w-100" alt="...">
+                                    <img src="https://thatdev.neocities.org/milvidas/imgs/post-biblion.webp"
+                                        class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
                                     <a href="https://biblion.odilo.us/">
-                                        <img src="{{ url('/images/bienal2025.jpg') }}" class="d-block w-100" alt="...">
+                                        <img src="https://thatdev.neocities.org/milvidas/imgs/post-biblion.webp"
+                                            class="d-block w-100" alt="...">
                                     </a>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ url('/images/post-biblion.jpg') }}" class="d-block w-100" alt="...">
+                                    <img src="https://thatdev.neocities.org/milvidas/imgs/post-biblion.webp"
+                                        class="d-block w-100" alt="...">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -65,60 +89,52 @@
                     </section>
                 </div>
 
-                <!-- EM ALTA -->
-                <section class="container my-3">
+                <div class="container">
+                    <section class="my-5">
+                        <h3 class="text-center">EM ALTA</h3>
+                        <div class="owl-carousel owl-theme">
 
-                    <h3 class="text-center">EM ALTA</h3>
+                            <img src="https://thatdev.neocities.org/lel/imgs/capas/OmisteriroCFantasma.png"
+                                alt="capa do livro O Misterio da cidade-Fantasma" class="slideEmAlta" width="">
 
-                    <div id="container">
-                        <div id="slider-container">
-                            <span onclick="slideRight()" class="btn"></span>
-                            <div id="slider">
+                            <img src="https://thatdev.neocities.org/lel/imgs/capas/julioVerne01.jpg"
+                                alt="capa do livro viagem ao mundo em 80 dias" class="slideEmAlta" width="">
 
-                                <img src="https://thatdev.neocities.org/lel/imgs/capas/OmisteriroCFantasma.png"
-                                    alt="capa do livro O Misterio da cidade-Fantasma" class="slide" width="">
+                            <img src="https://thatdev.neocities.org/lel/imgs/capas/Lovecraft01.jpg"
+                                alt="capa do livro Lovrecraft" class="slideEmAlta" width="">
 
-                                <img src="https://thatdev.neocities.org/lel/imgs/capas/julioVerne01.jpg"
-                                    alt="capa do livro viagem ao mundo em 80 dias" class="slide" width="">
+                            <img src="https://thatdev.neocities.org/lel/imgs/capas/dzhsterror02.png"
+                                alt="capa do livro Doze horas de terror" class="slideEmAlta" width="">
 
-                                <img src="https://thatdev.neocities.org/lel/imgs/capas/Lovecraft01.jpg"
-                                    alt="capa do livro Lovrecraft" class="slide" width="">
+                            <img src="https://thatdev.neocities.org/lel/imgs/capas/julioVerne02.jpg"
+                                alt="capa do livro Viagem ao Centro da Terra" class="slideEmAlta" width="">
 
-                                <img src="https://thatdev.neocities.org/lel/imgs/capas/dzhsterror02.png"
-                                    alt="capa do livro Doze horas de terror" class="slide" width="">
+                            <img src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg"
+                                alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" class="slideEmAlta" width="">
 
-                                <img src="https://thatdev.neocities.org/lel/imgs/capas/julioVerne02.jpg"
-                                    alt="capa do livro Viagem ao Centro da Terra" class="slide" width="">
+                            <img src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg"
+                                alt="capa do livro O pequeno Principe" class="slideEmAlta" width="">
 
-                                <img src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg"
-                                    alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" class="slide" width="">
+                            <img src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg"
+                                alt="capa do livro Alice no Pais das Maravilhas" class="slideEmAlta" width="">
 
-                                <img src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg"
-                                    alt="capa do livro O pequeno Principe" class="slide" width="">
+                            <img src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg"
+                                alt="capa do livro Alice Atraves do Espelho" class="slideEmAlta" width="">
 
-                                <img src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg"
-                                    alt="capa do livro Alice no Pais das Maravilhas" class="slide" width="">
-
-                                <img src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg"
-                                    alt="capa do livro Alice Atraves do Espelho" class="slide" width="">
-
-                                <img src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
-                                    alt="capa do livro A princesa que Salva a Si mesmo nesse Livro" class="slide"
-                                    width="">
-
-                            </div>
-                            <span onclick="slideLeft()" class="btn"></span>
+                            <img src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+                                alt="capa do livro A princesa que Salva a Si mesmo nesse Livro" class="slideEmAlta"
+                                width="">
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
 
-                <!-- RESENHAS EM ALTA -->
-                <section class="container my-3">
+                <section class="container my-5">
                     <h3>LIVROS MAIS RESENHADOS</h3>
                     <div class="row  catalogoRes">
                         <div class="">
                             <div class="border-bottom d-flex py-1">
-                                <a href="#"><img src="https://static.oskeelo.com.br/300/450/100/9+9786558812012.jpg"
+                                <a href="https://www.amazon.com.br/Desmortos-Mary-C-M%C3%BCller/dp/6558811995"><img
+                                        src="https://static.oskeelo.com.br/300/450/100/9+9786558812012.jpg"
                                         alt="capa do livro" width=""></a>
                                 <div class="p-1">
                                     <h5>Desmortos</h5>
@@ -149,7 +165,8 @@
                             </div>
 
                             <div class="border-bottom d-flex py-1">
-                                <a href="#"><img src="https://m.media-amazon.com/images/I/71CuLBjVCPL._SL1500_.jpg"
+                                <a href="https://www.amazon.com.br/mundo-depois-Livro-origem-Netflix-ebook/dp/B0CJN6K8NC"><img
+                                        src="https://m.media-amazon.com/images/I/71CuLBjVCPL._SL1500_.jpg"
                                         alt="capa do livro" width=""></a>
                                 <div class="p-1">
                                     <h5>O mundo depois de nós</h5>
@@ -163,14 +180,11 @@
                                         decidiram voltar para a casa de veraneio em busca de abrigo.</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
 
-                <!-- DESTAQUE DO MÊS -->
-
-                <section class="text-center my-3 py-3" style="background: #faf0e6;">
+                <section class="text-center my-5 py-3" style="background: #faf0e6;">
                     <div class="container">
                         <h3>DESTAQUE</h3>
                         <hr>
@@ -192,11 +206,12 @@
                 </section>
 
                 <!-- LIVROS EM ALTA NA COMUNIDADE -->
-
-                <section class="container my-3">
+                <section class="container my-5">
                     <h3>LIVROS MAIS COMENTADOS</h3>
-                    <div class="row  catalogo text-center">
-                        <div class="d-flex flex-wrap">
+
+                    <div class="row  catalogo">
+                        <div class="d-flex justify-content-center flex-wrap">
+
                             <div>
                                 <img src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg"
                                     alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width="">
@@ -229,11 +244,9 @@
 
                         </div>
                     </div>
-
                 </section>
 
-                <!-- CITAÇÃO -->
-                <section class="text-center my-3 py-3" style="background: #eee1d1;">
+                <section class="text-center my-5 py-3" style="background: #eee1d1;">
                     <div class="container">
                         <figure class="text-center">
                             <blockquote class="blockquote">
@@ -247,39 +260,67 @@
                     </div>
                 </section>
 
-                <!-- ARTIGOS  -->
                 <section class="container my-5">
-                    <h3>ARTIGOS MAIS CURTIDOS</h3>
+                    <h3>ARTIGOS</h3>
 
                     <div class="row row-cols-1 row-cols-md-3 g-4">
+
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card">
+                                <img src="https://thatdev.neocities.org/lel/imgs/mat/Majoras-Mask-Walkthrough.jpg"
+                                    class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card Title</h5>
-                                    <p class="card-text"></p>
+                                    <h5 class="card-title">Zelda Fansite</h5>
+                                    <p class="card-text">
+                                        Um mundo paralelo condenado ao fim iminente. Uma atmosfera ambiguamente psicodélica
+                                        e sombria.
+                                        Uma jornada carregada de profundidade emocional. Mais do que um game, Zelda:
+                                        Majora's Mask é uma experiência.</p>
+                                    <div class="text-center">
+                                        <a href="https://sites.google.com/view/zelda-fansite-majoras-mask/p%C3%A1gina-inicial?authuser=0"
+                                            target=" " class="btn btn-outline-info">Saiba Mais</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card">
+                                <img src="https://thatdev.neocities.org/milvidas/imgs/tudoBemN%C3%A3oSerNormal.png"
+                                    class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a short card.</p>
+                                    <h5 class="card-title">Tudo bem não ser normal</h5>
+                                    <p class="card-text">“Tudo bem não ser normal” (It’s Okay to Not Be Okay – 2020), série
+                                        sul-coreana assinada por Jo Yong e dirigida por Park Shin-woo. O drama fez um
+                                        sucesso estrondoso no ano de seu lançamento, carregando até hoje bons números de
+                                        audiência por seu potencial cativante e dramático.</p>
+                                    <div class="text-center">
+                                        <a href="https://www.netflix.com/br/title/81243992" target=" "
+                                            class="btn btn-outline-info">Saiba Mais</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card">
+                                <img src="https://thatdev.neocities.org/milvidas/imgs/aSignOfAffection.png"
+                                    class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural
-                                        lead-in to additional content.</p>
+                                    <h5 class="card-title">A Sign of Affection</h5>
+                                    <p class="card-text">A Sign Of Affection (Yubisaki to Renren) é uma série de mangá
+                                        shōjo escrita e ilustrada pelo duo de mangakás suu Morishita (Hibi Chouchou e Short
+                                        Cake Cake), de atualmente 10 volumes publicado em 2019 que teve uma adaptação para
+                                        televisão em forma de anime pela Ajia-do Animation Works e estreou em janeiro de
+                                        2024. </p>
+                                    <div class="text-center">
+                                        <a href="https://www.crunchyroll.com/pt-br/series/GEXH3W2V7/a-sign-of-affection"
+                                            target=" " class="btn btn-outline-info">Saiba Mais</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </section>
 
@@ -287,14 +328,9 @@
         </div>
 
         <!-- Custom JS -->
-        <script src="https://thatdev.neocities.org/milvidas/js/slide.js"></script>
+        <script src="https://thatdev.neocities.org/milvidas/js/slides.js"></script>
 
-        <!--     RODAPE       -->
-        <footer class="rodape text-center pb-4">
-            <div class="font-monospace p-2">M I L V I D A S</div>
-        </footer>
-
-        <!--    BOOTSTRAP      -->
+        <!--    BOOTSTRAP  JS    -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
         </script>
