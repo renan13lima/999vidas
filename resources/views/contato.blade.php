@@ -13,45 +13,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="#">
+    <link href="{{ url('assets/css/contato.css') }}" rel="stylesheet" type="text/css" media="all">
 
-    <style>
-        nav {
-            color: #604b32;
-            background: rgb(247, 246, 240);
-        }
-
-        h1 {
-            color: #4D3E3E;
-            font-weight: bold;
-        }
-
-        p {
-            color: #4D3E3E;
-        }
-
-        span {
-            font-size: 15px;
-            font-weight: bold;
-        }
-
-        .btn {
-            color: #4D3E3E;
-            background: #d4cec3;
-        }
-
-        .btn:hover {
-            color: #d4cec3;
-            background: #4D3E3E;
-        }
-
-        /*        FOOTER        */
-
-        footer {
-            background: #604b32;
-            color: rgb(247, 246, 240);
-        }
-    </style>
 </head>
 
 <body>

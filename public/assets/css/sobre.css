@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    color: #604b32;
+    background: rgb(247, 246, 240);
+}
+
+h1 {
+    color: rgb(88, 75, 56);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+p {
+    color: rgb(88, 75, 56);
+}
+
+span {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Courier New", monospace;
+    font-variant: small-caps;
+}
+
+footer {
+    background: #604b32;
+    color: rgb(247, 246, 240);
+}

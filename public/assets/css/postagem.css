@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    padding-top: 35px;
+}
+
+.card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-header {
+    background: #faebd7;
+}
+
+.nav-tabs a {
+    font-weight: bold;
+    color: #4d3e3e;
+}
+
+.perfilUser {
+    margin: 10px 0px;
+}
+
+.perfilUser img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.userPost {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.userPost span {
+    color: gray;
+}
+
+.userName {
+    font-weight: bold;
+}
+
+.card-text {
+    font-family: Lucida Console;
+    color: rgb(80, 80, 80);
+}
+
+.data {
+    font-size: 12px;
+    color: gray;
+}
+
+.btn {
+    color: #604b32;
+    background: rgb(224, 219, 210);
+    border: rgb(224, 219, 210);
+}
+
+.btn:hover {
+    color: #604b32;
+    background: #d4cec3;
+    border: #d4cec3;
+}

@@ -13,41 +13,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="#">
-
-    <style>
-        nav {
-            color: #604b32;
-            background: rgb(247, 246, 240);
-        }
-
-        h1 {
-            color: rgb(88, 75, 56);
-            font-family: "Lucida Console", "Courier New", monospace;
-        }
-
-        p {
-            color: rgb(88, 75, 56);
-        }
-
-        span {
-            font-size: 15px;
-            font-weight: bold;
-            font-style: italic;
-            font-family: "Courier New", monospace;
-            font-variant: small-caps;
-        }
-
-        /*        FOOTER        */
-
-        footer {
-            background: #604b32;
-            color: rgb(247, 246, 240);
-        }
-    </style>
+    <link href="{{ url('assets/css/sobre.css') }}" rel="stylesheet" type="text/css" media="all">
 
 </head>
-
 
 <body>
 

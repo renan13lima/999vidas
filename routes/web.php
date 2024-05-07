@@ -23,9 +23,9 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/', [BlogController::class, 'index'])->name('blog.index');
+//Route::get('/', [BlogController::class, 'index'])->name('blog.index');
 
-Route::get('/inicio', function () {
+Route::get('/', function () {
     return view('inicio');
 });
 

@@ -33,74 +33,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="#">
+    <link href="{{ url('assets/css/inicio.css') }}" rel="stylesheet" type="text/css" media="all">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            color: #604b32;
-            background: rgb(247, 246, 240);
-        }
-
-        .news {
-            background: #deb887;
-            /*    background-image: url("https://thatdev.neocities.org/milvidas/imgs/piso-de-madeira-marrom.jpg"); */
-        }
-
-        h1 {
-            color: #4D3E3E;
-            font-weight: bold;
-            margin-top: 30px;
-        }
-
-        h3 {
-            color: #4D3E3E;
-            font-weight: bold;
-        }
-
-        .catalogo img {
-            width: 200px;
-            height: 100%;
-            padding: 5px;
-            border-radius: 5%;
-        }
-
-        .catalogoRes img {
-            width: 150px;
-            margin: 5px;
-            border-radius: 5%;
-            text-align: center;
-        }
-
-        .catalogoRes h5 {
-            color: #604b32;
-            font-weight: bold;
-        }
-
-        .biblioteca img {
-            width: 150px;
-            height: 100%;
-            padding: 5px;
-            border-radius: 5%;
-        }
-
-        .owl-carousel img {
-            height: 300px;
-        }
-
-        footer {
-            background: #604b32;
-            color: rgb(247, 246, 240);
-        }
-    </style>
 </head>
 
 <body>

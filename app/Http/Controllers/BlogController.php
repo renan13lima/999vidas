@@ -34,8 +34,9 @@ class BlogController extends Controller
     }
 
     public function autorPostagem($id){
+        $autor = User::find($id);
         $postagens = Postagem::where('user_id', $id)->orderBy('id', 'DESC')->get();
-        return view('welcome', ['postagens' => $postagens]);
+        return view('perfil', ['postagens' => $postagens, 'autor' => $autor]);
     }
 
     public function postagem($id){
