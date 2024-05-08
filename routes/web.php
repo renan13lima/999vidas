@@ -47,6 +47,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/perfil', [App\Http\Controllers\PerfilController::class, 'perfil'])->name('perfil.perfil');
+    Route::post('/perfil/{id}/edit', [App\Http\Controllers\PerfilController::class, 'perfilUpdate'])->name('perfil.update');
+
     Route::get('/painel', [App\Http\Controllers\PainelController::class, 'painel'])->name('painel');
     Route::get('/explorar', [App\Http\Controllers\ExplorarController::class, 'explorar'])->name('explorar');
     // ------------------------------ CRUD CATEGORIA ---------------------------------------------
