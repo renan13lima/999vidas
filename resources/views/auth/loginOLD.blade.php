@@ -1,2 +1,0 @@
-@extends('adminlte::auth.login')
-

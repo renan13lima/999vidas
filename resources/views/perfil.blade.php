@@ -14,7 +14,6 @@
 
 <img src="data:image/png;base64,{{ $user->foto }}" />
 
-
 <form method="POST" action="{{ url('/perfil/' . $user->id . '/edit') }}" enctype="multipart/form-data">
     @csrf
     <label for="fname">Nick:</label><br>
