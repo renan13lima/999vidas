@@ -1,0 +1,33 @@
+nav {
+    color: #604b32;
+    background: rgb(247, 246, 240);
+}
+
+h1 {
+    color: #4d3e3e;
+    font-weight: bold;
+}
+
+p {
+    color: #4d3e3e;
+}
+
+span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn {
+    color: #4d3e3e;
+    background: #d4cec3;
+}
+.btn:hover {
+    color: #d4cec3;
+    background: #4d3e3e;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
