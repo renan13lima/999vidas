@@ -51,6 +51,10 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/painel', [App\Http\Controllers\PainelController::class, 'painel'])->name('painel');
     Route::get('/explorar', [App\Http\Controllers\ExplorarController::class, 'explorar'])->name('explorar');
+
+    Route::post('/denuncia_usuario', [App\Http\Controllers\DenunciaUsuarioController::class, 'denuncia_usuario'])->name('denuncia_usuario');
+    Route::post('/denuncia_postagem', [App\Http\Controllers\DenunciaPostagemController::class, 'denuncia_postagem'])->name('denuncia_postagem');
+
     // ------------------------------ CRUD CATEGORIA ---------------------------------------------
 
     // LISTAR GET

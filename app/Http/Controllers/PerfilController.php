@@ -28,7 +28,7 @@ class PerfilController extends Controller
 
         $validated = $request->validate([
             'nick' => 'required|min:5',
-            'biografia' => 'required|min:20',
+            'biografia' => 'required|min:15',
             'foto' => 'required|mimes:jpg,png',
         ], $messages);
 

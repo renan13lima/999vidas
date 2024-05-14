@@ -351,6 +351,12 @@ return [
                     'icon' => 'fas fa-fw fa-tags',
                     'can'  => 'is_admin',
                 ],
+                [
+                    'text' => 'Denúncia',
+                    'url'  => 'denuncia',
+                    'icon' => 'fa-solid fa-triangle-exclamation',
+                    'can'  => 'is_admin',
+                ],
         ],
 
 
