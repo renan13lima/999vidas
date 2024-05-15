@@ -55,6 +55,9 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/denuncia_usuario', [App\Http\Controllers\DenunciaUsuarioController::class, 'denuncia_usuario'])->name('denuncia_usuario');
     Route::post('/denuncia_postagem', [App\Http\Controllers\DenunciaPostagemController::class, 'denuncia_postagem'])->name('denuncia_postagem');
 
+    Route::get('/denuncia_usuario', [App\Http\Controllers\DenunciaUsuarioController::class, 'index'])->middleware('can:is_admin')->name('denuncia_usuario_index');
+
+
     // ------------------------------ CRUD CATEGORIA ---------------------------------------------
 
     // LISTAR GET

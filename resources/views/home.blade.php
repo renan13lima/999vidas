@@ -33,7 +33,7 @@
         <main id="main">
 
             <!--   BARRA DE NAVEGAÇÃO    -->
-            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills pb-3 justify-content-center" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-inicio-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-inicio" type="button" role="tab" aria-controls="pills-inicio"
@@ -89,7 +89,7 @@
                                                         </li>
                                                         <li><a class="dropdown-item" data-bs-toggle="modal"
                                                                 data-bs-target="#postagem" data-bs-whatever="@post"
-                                                                href="#">Denunciar postagem</a>
+                                                                href="#">Denunciar Postagem</a>
                                                         </li>
                                                     </ul>
                                                 </i>
@@ -127,15 +127,12 @@
                                                                 <button type="button" class="btn btn-secondary"
                                                                     data-bs-dismiss="modal">Fechar</button>
                                                                 <button type="submit" class="btn fw-bold"
-                                                                    value="Salvar">Salvar</button>
+                                                                    value="Salvar">Enviar</button>
                                                             </div>
                                                             </form>
-
-
                                                         </div>
                                                     </div>
                                                 </div>
-
 
                                                 <!--      FORMULARIO  DENUNCIAR POSTAGEM        -->
                                                 <div class="modal fade" id="postagem" tabindex="-1"
@@ -151,22 +148,29 @@
                                                             </div>
                                                             <div class="modal-body">
 
-                                                                <form>
+                                                                <form method="POST"
+                                                                    action="{{ url('denuncia_postagem') }}">
+                                                                    @csrf
                                                                     <div class="mb-3">
                                                                         <label for="message-text"
                                                                             class="col-form-label">Lamentamos o incômodo
                                                                             que possa estar sentindo. <br>
                                                                             Digite abaixo o motivo desta denúncia.</label>
-                                                                        <textarea class="form-control" id="message-text"></textarea>
+                                                                        <input type="hidden" name="denunciado_id"
+                                                                            value="{{ $value->user->id }}">
+                                                                        <input type="hidden" name="postagem_id"
+                                                                            value="{{ $value->id }}">
+                                                                        <textarea class="form-control" id="message-text" name="conteudo"></textarea>
                                                                     </div>
-                                                                </form>
+
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary"
                                                                     data-bs-dismiss="modal">Fechar</button>
-                                                                <button type="button"
-                                                                    class="btn btn-primary">Enviar</button>
+                                                                <button type="submit" class="btn fw-bold"
+                                                                    value="Salvar">Enviar</button>
                                                             </div>
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </div>

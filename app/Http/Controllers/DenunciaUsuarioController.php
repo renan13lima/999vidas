@@ -18,12 +18,10 @@ class DenunciaUsuarioController extends Controller
         return back()->with('status', 'Denúncia realizada com sucesso');
     }
 
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        $denuncia_usuario = DenunciaUsuario::OrderBy('nome', 'ASC')->get();
+        $denuncia_usuario = DenunciaUsuario::get();
+        return view('denuncia.denuncia_usuario_index', ['denuncia_usuario' => $denuncia_usuario]);
     }
 
     /**

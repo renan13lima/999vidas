@@ -352,8 +352,8 @@ return [
                     'can'  => 'is_admin',
                 ],
                 [
-                    'text' => 'Denúncia',
-                    'url'  => 'denuncia',
+                    'text' => 'Denúncia Usuário',
+                    'url'  => 'denuncia_usuario',
                     'icon' => 'fa-solid fa-triangle-exclamation',
                     'can'  => 'is_admin',
                 ],
