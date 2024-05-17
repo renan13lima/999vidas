@@ -5,6 +5,8 @@ use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\PostagemController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PerfilController;
+//use App\Http\Controllers\Auth\LoginController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +18,10 @@ use App\Http\Controllers\PerfilController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+// teste fracassado
+//Route::get('login', 'LoginController@showLoginForm')->name('login');
+//Route::post('login', 'LoginController@login');
 
 /*
 Route::get('/', function () {
