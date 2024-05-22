@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Categoria</div>
+                    <div class="card-header">Denúncia Postagem</div>
 
                     <div class="card-body">
 
@@ -15,34 +15,30 @@
                             </div>
                         @endif
 
-                        <a class="btn btn-success" href="{{ url('/categoria/create') }}" role="button">Criar</a>
-
-
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Nome</th>
-                                    <th scope="col"></th>
+                                    <th scope="col">Denunciante</th>
+                                    <th scope="col">Postagem</th>
+                                    <th scope="col">Conteúdo</th>
                                 </tr>
                             </thead>
                             <tbody>
 
-                                @foreach ($categorias as $value)
+                                @foreach ($denuncia_postagem as $value)
                                     <th scope="row">{{ $value->id }}</th>
-                                    <td>{{ $value->nome }}</td>
-                                    <td><a class="btn btn-primary" href="{{ url('/categoria/' . $value->id) }}"
-                                            role="button">Vizualizar</a></td>
-                                    <td><a class="btn btn-warning" href="{{ url('/categoria/' . $value->id . '/edit') }}"
-                                            role="button">Editar</a> </td>
+                                    <td>{{ $value->denunciante->name }}</td>
+                                    <td>{{ $value->postagem->titulo }}</td>
+                                    <td><a class="btn btn-primary" href="{{ url('/denuncia_postagem/' . $value->id) }}"
+                                            role="button">Visualizar</a></td>
                                     <td>
-                                        <form method="POST" action="{{ url('/categoria/' . $value->id) }}">
+                                        <form method="GET" action="{{ url('/denuncia_postagem_show/' . $value->id) }}">
                                             @csrf
                                             @method('DELETE')
                                             <input type="submit" class="form-control" value="Deletar">
                                         </form>
                                     </td>
-
                                     </tr>
                                 @endforeach
                             </tbody>

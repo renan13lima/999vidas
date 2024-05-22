@@ -69,8 +69,7 @@
                                         <!--   CARD BODY    -->
                                         <div class="card-body">
                                             <div class="perfilUser d-flex align-items-center">
-                                                <img src="https://i.pinimg.com/550x/da/ba/b8/dabab85a04f90e5e4071c906611c7271.jpg"
-                                                    class="img-fluid" alt="...">
+                                                    <img src="data:image/png;base64,{{ $value->user->foto }}" alt="Avatar do autor">
                                                 <div class="userPost">
                                                     <div class="userName">{{ $value->user->name }}</div>
                                                     <p><time
@@ -78,7 +77,7 @@
                                                     </p>
                                                 </div>
 
-                                                <!--  ICONE DENUNCIAR    -->
+                                                <!-- ICONE DENUNCIAR -->
                                                 <i class="bi bi-exclamation-triangle text-danger ms-auto
                                               dropdown-toggle"
                                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,8 +93,7 @@
                                                     </ul>
                                                 </i>
 
-
-                                                <!--           FORMULARIO  DENUNCIAR USUARIO       -->
+                                                <!-- FORMULARIO  DENUNCIAR USUARIO -->
                                                 <div class="modal fade" id="usuario" tabindex="-1"
                                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
@@ -187,6 +185,7 @@
                                             <time
                                                 class="published">{{ \Carbon\Carbon::parse($value->created_at)->format('d/m/Y') }}</time>
                                             <div class="ms-auto">
+
                                                 <a href="#"><i class="bi bi-eye"></i></a>
                                                 <a href="{{ url('/blog/curtida/' . $value->id) }}"><i
                                                         class="bi bi-heart"></i></a>

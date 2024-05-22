@@ -59,6 +59,7 @@
                                 <!-- CONTEUDO POSTAGEM -->
                                 <p class="card-text">{!! $postagem->conteudo !!}</p>
 
+
                             </div> <!-- Fechando CARD BODY -->
 
                             <!-- FOOTER CARD -->
@@ -66,7 +67,7 @@
                                 <time
                                     class="published">{{ \Carbon\Carbon::parse($postagem->created_at)->format('d/m/Y') }}</time>
                                 <div class="ms-auto">
-                                    <a href="#">{{ $postagem->categoria->nome }}</a>
+                                    <!-- <a href="#">{{ $postagem->categoria->nome }}</a> -->
                                     <a href="{{ url('/blog/curtida/' . $postagem->id) }}">
                                         <i class="bi bi-heart"></i></a>
                                     {{ $postagem->curtidas->count() }}
@@ -96,13 +97,15 @@
                         @endauth
 
                         <h3 class="mt-5 text-center">Comentários:</h3>
-                        <div class="my-2 border-bottom">
+
                             @foreach ($postagem->comentarios as $comentario)
-                                <h6>{{ $comentario->user->name }}</h6>
+                            <div class="py-2">
+                                <h6 class="fw-bold">{{ $comentario->user->name }}</h6>
+                                <p class="">{{ $comentario->conteudo }}</p>
                                 <span class="data">| Data {{ $comentario->created_at }}</span>
-                                <p>{{ $comentario->conteudo }}</p>
-                            @endforeach
-                        </div>
+                                <hr class="my-2">
+                            </div>
+                        @endforeach
 
                     </div> <!-- Fechando COMENTARIOS -->
                 </div> <!-- Fechando ROW -->

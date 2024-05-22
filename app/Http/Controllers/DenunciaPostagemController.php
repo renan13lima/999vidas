@@ -9,8 +9,6 @@ class DenunciaPostagemController extends Controller
 {
     public function denuncia_postagem(Request $request)
     {
-        //dd($request->all());
-
         $denuncia_postagem = new DenunciaPostagem;
         $denuncia_postagem->denunciante_id = auth()->user()->id;
         $denuncia_postagem->denunciado_id = $request->denunciado_id;
@@ -23,7 +21,8 @@ class DenunciaPostagemController extends Controller
 
     public function index()
     {
-        $denuncia_postagem = DenunciaPostagem::OrderBy('nome', 'ASC')->get();
+        $denuncia_postagem = DenunciaPostagem::get();
+        return view('denuncia.denuncia_postagem_index', ['denuncia_postagem' => $denuncia_postagem]);
     }
 
     /**
@@ -39,7 +38,11 @@ class DenunciaPostagemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $denuncia_postagem = new DenunciaPostagem;
+        $denuncia_postagem-> conteudo = $request -> conteudo;
+        $denuncia_postagem-> save();
+
+        return redirect('denuncia_postagem')->with('status', 'Denúncia salva com sucesso!');
     }
 
     /**
@@ -47,7 +50,8 @@ class DenunciaPostagemController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $denuncia_postagem = DenunciaPostagem::find($id);
+        return view('denuncia.denuncia_postagem_show', ['denuncia_postagem' => $denuncia_postagem]);
     }
 
     /**
@@ -71,6 +75,8 @@ class DenunciaPostagemController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $denuncia_postagem = DenunciaPostagem::find($id);
+        $denuncia_postagem->delete();
+        return redirect('denuncia_postagem')->with('status', 'Denúncia resolvida');
     }
 }

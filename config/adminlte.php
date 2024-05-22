@@ -357,6 +357,12 @@ return [
                     'icon' => 'fa-solid fa-triangle-exclamation',
                     'can'  => 'is_admin',
                 ],
+                [
+                    'text' => 'Denúncia Postagem',
+                    'url'  => 'denuncia_postagem',
+                    'icon' => 'fa-solid fa-triangle-exclamation',
+                    'can'  => 'is_admin',
+                ],
         ],
 
 

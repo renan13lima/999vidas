@@ -42,7 +42,7 @@
 
                   <label for="fname">Conteúdo:</label><br>
                     <textarea id="inp_editor1" class="form-control" name="conteudo">
-                        &lt;p&gt;Initial Document Content&lt;/p&gt;
+                        &lt;p&gt;&lt;/p&gt;
                     </textarea>
                   <input type="submit"  class="form-control" value="ENVIAR">
                 </form>

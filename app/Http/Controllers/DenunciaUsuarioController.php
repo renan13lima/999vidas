@@ -37,7 +37,11 @@ class DenunciaUsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $denuncia_usuario = new DenunciaUsuario;
+        $denuncia_usuario-> conteudo = $request -> conteudo;
+        $denuncia_usuario-> save();
+
+        return redirect('denuncia_usuario')->with('status', 'Denúncia salva com sucesso!');
     }
 
     /**
@@ -45,7 +49,8 @@ class DenunciaUsuarioController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $denuncia_usuario = DenunciaUsuario::find($id);
+        return view('denuncia.denuncia_usuario_show', ['denuncia_usuario' => $denuncia_usuario]);
     }
 
     /**
@@ -69,6 +74,8 @@ class DenunciaUsuarioController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $denuncia_usuario = DenunciaUsuario::find($id);
+        $denuncia_usuario->delete();
+        return redirect('denuncia_usuario')->with('status', 'Denúncia resolvida');
     }
 }

@@ -42,56 +42,9 @@ h3 {
     padding: 5px;
     border-radius: 5%;
 }
-/*  SLIDER   */
-#container {
-    display: grid;
-    place-items: center
-}
-#slider-container {
-    height: 300px;
-    width: 85vw;
-    max-width: 1000px;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-}
-#slider-container .btn {
-    position: absolute;
-    top: calc(50% - 30px);
-    height: 15px;
-    width: 15px;
-    border-left: 8px solid #696969;
-    border-top: 8px solid #696969;
-    cursor: pointer;
-}
-#slider-container .btn:hover {
-    transform: scale(1.2);
-}
-#slider-container .btn.inactive {
-    border-color: #282828
-}
-#slider-container .btn:first-of-type {
-    transform: rotate(-45deg);
-    left: 10px
-}
-#slider-container .btn:last-of-type {
-    transform: rotate(135deg);
-    right: 10px;
-}
-#slider-container #slider {
-    display: flex;
-    width: 1000%;
-    height: 100%;
-    transition: all .5s;
-}
-#slider-container #slider .slide {
-    height: 90%;
-    margin: auto 10px;
-    border-radius: 5px;
-}
 
-/*        FOOTER        */
-footer {
-    background: #604b32;
-    color: rgb(247, 246, 240);
-}
+.owl-carousel img{
+    height: 300px;
+  }
+
+

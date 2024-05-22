@@ -9,6 +9,12 @@
 
                     <div class="card-body">
 
+                        @if (session('status'))
+                            <div class="alert alert-success">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+
                         <table class="table">
                             <thead>
                                 <tr>
@@ -24,8 +30,15 @@
                                     <th scope="row">{{ $value->id }}</th>
                                     <td>{{ $value->denunciante->name }}</td>
                                     <td>{{ $value->denunciado->name }}</td>
-                                    <td><a class="btn btn-primary" href="{{ url('/denuncia_usuario_show/' . $value->id) }}"
-                                            role="button">Vizualizar</a></td>
+                                    <td><a class="btn btn-primary" href="{{ url('/denuncia_usuario/' . $value->id) }}"
+                                            role="button">Visualizar</a></td>
+                                    <td>
+                                        <form method="GET" action="{{ url('/denuncia_usuario_show/' . $value->id) }}">
+                                            @csrf
+                                            @method('DELETE')
+                                            <input type="submit" class="form-control" value="Deletar">
+                                        </form>
+                                    </td>
                                     </tr>
                                 @endforeach
                             </tbody>
