@@ -1,5 +1,9 @@
 @extends('adminlte::page')
 
+@section('content')
+
+@foreach ($categorias as $value)
+
 <!doctype html>
 <html lang="pt-BR">
 
@@ -22,12 +26,6 @@
 </head>
 
 <body>
-
-    @if (session('status'))
-        <div class="alert alert-success mt-3">
-            {{ session('status') }}
-        </div>
-    @endif
 
     <main id="main">
 
@@ -190,4 +188,7 @@
 </body>
 
 </html>
+
+@endforeach
+
 @endsection

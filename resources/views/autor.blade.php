@@ -1,16 +1,6 @@
 @extends('adminlte::page')
 
 @section('content')
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
-
     <!doctype html>
     <html lang="pt-BR">
 
@@ -66,7 +56,7 @@
 
             .perfilUser {
                 margin: 15px 0px;
-                font-size: 20px;
+                font-size: 10px;
             }
 
             .perfilUser img {
@@ -83,6 +73,8 @@
             .userName {
                 font-weight: bold;
             }
+
+            .bio {}
 
             .Perfil span {
                 font-size: 12px;
@@ -112,16 +104,12 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="box mx-auto col-10 my-3">
 
-                            @foreach ($postagens as $value)
+                        @foreach ($postagens as $value)
+                            <div class="box mx-auto col-10 my-3">
+
                                 <div class="perfilUser d-flex align-items-center">
-                                    <img src="data:image/png;base64,{{ $autor->foto }}" class="img-fluid" alt="...">
-                                    <div class="userPost">
-                                        <div class="userName">{{ $autor->name }}
-                                            <span>{{ $autor->nick }}</span>
-                                        </div>
-                                    </div>
+                                    <h2>{{ $value->titulo }}</h2>
                                     <i class="bi bi-exclamation-triangle text-danger ms-auto dropdown-toggle"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <ul class="dropdown-menu">
@@ -132,8 +120,7 @@
                                     </i>
                                 </div>
 
-                                <h2>{{ $value->titulo }}</h2>
-                                <p class="post">{!! $value->conteudo !!}</p>
+                                <p>{!! $value->conteudo !!}</p>
 
                                 <div class="footerBox d-flex justify-content-between">
                                     <div>
@@ -144,6 +131,7 @@
                                             class="published">{{ \Carbon\Carbon::parse($value->created_at)->format('d/m/Y') }}</time>
                                     </div>
                                     <div>
+                                        <a>{{ $value->categoria->nome }}</a>
                                         <a href="{{ url('/blog/curtida/' . $value->id) }}"><i class="bi bi-heart"></i></a>
                                         {{ $value->curtidas->count() }}
                                         <a href="{{ url('/blog/postagem/' . $value->id) }}"><i class="bi bi-chat"></i></a>
@@ -151,8 +139,9 @@
                                     </div>
 
                                 </div>
-                            @endforeach
-                        </div>
+                            </div>
+                        @endforeach
+
                     </div>
                 </div>
             </main>

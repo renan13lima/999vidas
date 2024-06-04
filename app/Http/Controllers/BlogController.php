@@ -67,7 +67,8 @@ class BlogController extends Controller
             $curtida->postagem_id = $id;
             $curtida->save();
         }else{
-            $curtida = Curtida::find($id);
+            $curtida = Curtida::where('user_id', auth()->user()->id)->where('postagem_id', $id)->first();
+            //dd ($curtida);
             $curtida->delete();
         }
 

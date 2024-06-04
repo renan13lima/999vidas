@@ -38,8 +38,7 @@
                             <!--   CARD BODY    -->
                             <div class="card-body">
                                 <div class="perfilUser d-flex align-items-center">
-                                    <img src="https://i.pinimg.com/550x/da/ba/b8/dabab85a04f90e5e4071c906611c7271.jpg"
-                                        class="img-fluid" alt="...">
+                                     <img src="data:image/png;base64,{{ $postagem->user->foto }}" alt="Avatar do autor">
                                     <div class="userPost">
                                         <div class="userName">{{ $postagem->user->name }}</div>
                                         <span><time
@@ -58,7 +57,6 @@
 
                                 <!-- CONTEUDO POSTAGEM -->
                                 <p class="card-text">{!! $postagem->conteudo !!}</p>
-
 
                             </div> <!-- Fechando CARD BODY -->
 

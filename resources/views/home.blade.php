@@ -63,7 +63,7 @@
                                 <div class="mx-auto col-10 my-3">
                                     <div class="card">
                                         <div class="card-header">
-                                            <h5 class="mb-0 card-title">{{ $value->titulo }}</h5>
+                                            <h5 class="mb-0 card-title fw-bold">{{ $value->titulo }}</h5>
                                         </div>
 
                                         <!--   CARD BODY    -->
@@ -186,7 +186,7 @@
                                                 class="published">{{ \Carbon\Carbon::parse($value->created_at)->format('d/m/Y') }}</time>
                                             <div class="ms-auto">
 
-                                                <a href="#"><i class="bi bi-eye"></i></a>
+                                                <a>{{ $value->categoria->nome }}</a>
                                                 <a href="{{ url('/blog/curtida/' . $value->id) }}"><i
                                                         class="bi bi-heart"></i></a>
                                                 {{ $value->curtidas->count() }}

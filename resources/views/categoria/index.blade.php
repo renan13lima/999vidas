@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card mt-5">
                     <div class="card-header">Categoria</div>
 
                     <div class="card-body">
@@ -16,7 +16,6 @@
                         @endif
 
                         <a class="btn btn-success" href="{{ url('/categoria/create') }}" role="button">Criar</a>
-
 
                         <table class="table">
                             <thead>
