@@ -363,6 +363,12 @@ return [
                     'icon' => 'fa-solid fa-triangle-exclamation',
                     'can'  => 'is_admin',
                 ],
+                [
+                    'text' => 'Usuario Postagens',
+                    'url'  => 'usuario_postagem',
+                    'icon' => 'fa-solid fa fa-address-book',
+                    'can'  => 'is_admin',
+                ],
         ],
 
 

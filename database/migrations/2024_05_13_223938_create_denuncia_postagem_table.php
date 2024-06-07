@@ -17,6 +17,8 @@ return new class extends Migration
             $table->bigInteger('denunciado_id');
             $table->bigInteger('postagem_id');
             $table->text('conteudo');
+            $table->string('status')->default('PENDENTE');
+            $table->text('justificativa')->nullable();
             $table->timestamps();
         });
     }

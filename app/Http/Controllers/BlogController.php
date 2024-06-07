@@ -14,7 +14,7 @@ class BlogController extends Controller
 
     public function index()
     {
-        $postagens = Postagem::orderBy('id', 'DESC')->get();
+        $postagens = Postagem::where('status', 1)->orderBy('id', 'DESC')->get();
         return view('welcome', ['postagens' => $postagens]);
     }
 
@@ -24,8 +24,8 @@ class BlogController extends Controller
     }
 
     public function categoriaPostagem($id){
-        $postagens = Postagem::where('categoria_id', $id)->orderBy('id', 'DESC')->get();
-        return view('welcome', ['postagens' => $postagens]);
+        $postagens = Postagem::where('status', 1)->where('categoria_id', $id)->orderBy('id', 'DESC')->get();
+        return view('postCategoria', ['postagens' => $postagens]);
     }
 
     public function autor(){
@@ -35,12 +35,12 @@ class BlogController extends Controller
 
     public function autorPostagem($id){
         $autor = User::find($id);
-        $postagens = Postagem::where('user_id', $id)->orderBy('id', 'DESC')->get();
+        $postagens = Postagem::where('status', 1)->where('user_id', $id)->orderBy('id', 'DESC')->get();
         return view('autor', ['postagens' => $postagens, 'autor' => $autor]);
     }
 
     public function postagem($id){
-        $postagem = Postagem::find($id);
+        $postagem = Postagem::where('status', 1)->find($id);
 
         //dd($postagem->comentarios);
 

@@ -17,10 +17,10 @@ class PostagemController extends Controller
        // $postagens = Postagem::where('user_id', $user_id)->orderBy('titulo', 'ASC')->get();
 
         if (auth()->user()->role == 'admin'){
-            $postagens = Postagem::orderBy('titulo', 'ASC')->get();
-            
+            $postagens = Postagem::where('status', 1)->orderBy('titulo', 'ASC')->get();
+
         }else {
-            $postagens = Postagem::where('user_id', $user_id)->orderBy('titulo', 'ASC')->get();
+            $postagens = Postagem::where('status', 1)->where('user_id', $user_id)->orderBy('titulo', 'ASC')->get();
         }
         return view('postagem.index', ['postagens' => $postagens]);
     }

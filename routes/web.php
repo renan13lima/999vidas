@@ -71,6 +71,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/denuncia_postagem/{id}', [App\Http\Controllers\DenunciaPostagemController::class, 'show'])->middleware('can:is_admin')->name('denuncia_postagem_show');
     Route::post('/denuncia_postagem/store', [App\Http\Controllers\DenunciaPostagemController::class, 'store'])->middleware('can:is_admin')->name('denuncia_postagem.store');
 
+    Route::post('/denuncia/justificativa', [App\Http\Controllers\DenunciaPostagemController::class, 'justificativa'])->middleware('can:is_admin')->name('justificativa');
     // ------------------------------ CRUD CATEGORIA ---------------------------------------------
 
     // LISTAR GET

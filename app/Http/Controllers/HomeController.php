@@ -27,7 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $postagens = Postagem::orderBy('id', 'desc')->get();
+        $postagens = Postagem::where('status', 1)->orderBy('id', 'desc')->get();
         $categorias = Categoria::orderBy('id', 'desc')->get();
         $autores = User::orderBy('id', 'desc')->get();
 

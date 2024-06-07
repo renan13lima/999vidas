@@ -2,18 +2,6 @@
 
 @section('content')
 
-@foreach ($categorias as $value)
-
-<!doctype html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Inicio</title>
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -23,9 +11,6 @@
 
     <!-- Custom CSS -->
     <link href="{{ url('assets/css/home.css') }}" rel="stylesheet" type="text/css" media="all">
-</head>
-
-<body>
 
     <main id="main">
 
@@ -157,8 +142,7 @@
                                 <time
                                     class="published">{{ \Carbon\Carbon::parse($value->created_at)->format('d/m/Y') }}</time>
                                 <div class="ms-auto">
-                                        <a href="#">{{ $postagem->categoria->nome }}</a>
-                                    <a href="#"><i class="bi bi-eye"></i></a>
+                                        <a href="#">{{ $value->categoria->nome }}</a>
                                     <a href="{{ url('/blog/curtida/' . $value->id) }}"><i
                                             class="bi bi-heart"></i></a>
                                     {{ $value->curtidas->count() }}
@@ -185,10 +169,6 @@
     <!--     Font Awesome       -->
     <script src="https://kit.fontawesome.com/651d079c52.js" crossorigin="anonymous"></script>
 
-</body>
 
-</html>
-
-@endforeach
 
 @endsection

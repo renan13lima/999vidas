@@ -17,6 +17,7 @@ return new class extends Migration
             $table->binary('conteudo');
             $table->bigInteger('user_id');
             $table->bigInteger('categoria_id');
+            $table->integer('status')->default(1);
             //$table->foreign('categoria_id')->references('id')->on('categorias');
             //$table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

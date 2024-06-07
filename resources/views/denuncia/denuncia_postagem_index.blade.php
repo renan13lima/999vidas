@@ -21,7 +21,9 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Denunciante</th>
                                     <th scope="col">Postagem</th>
+                                    <th scope="col">Status</th>
                                     <th scope="col">Conteúdo</th>
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -30,8 +32,12 @@
                                     <th scope="row">{{ $value->id }}</th>
                                     <td>{{ $value->denunciante->name }}</td>
                                     <td>{{ $value->postagem->titulo }}</td>
-                                    <td><a class="btn btn-primary" href="{{ url('/denuncia_postagem/' . $value->id) }}"
+                                    <td>
+                                                {{ $value->status }}
+                                            </td>
+                                            <td><a class="btn btn-primary" href="{{ url('/denuncia_postagem/' . $value->id) }}"
                                             role="button">Visualizar</a></td>
+
                                     <td>
                                         <form method="GET" action="{{ url('/denuncia_postagem_show/' . $value->id) }}">
                                             @csrf

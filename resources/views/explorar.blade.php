@@ -65,7 +65,7 @@
                                         class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <a href="https://biblion.odilo.us/">
+                                    <a href="https://biblion.odilo.us/" target=" ">
                                         <img src="https://thatdev.neocities.org/milvidas/imgs/post-biblion.webp"
                                             class="d-block w-100" alt="...">
                                     </a>
@@ -133,7 +133,7 @@
                     <div class="row  catalogoRes">
                         <div class="">
                             <div class="border-bottom d-flex py-1">
-                                <a href="https://www.amazon.com.br/Desmortos-Mary-C-M%C3%BCller/dp/6558811995"><img
+                                <a href="https://www.amazon.com.br/Desmortos-Mary-C-M%C3%BCller/dp/6558811995" target=" "><img
                                         src="https://static.oskeelo.com.br/300/450/100/9+9786558812012.jpg"
                                         alt="capa do livro" width=""></a>
                                 <div class="p-1">
@@ -165,7 +165,7 @@
                             </div>
 
                             <div class="border-bottom d-flex py-1">
-                                <a href="https://www.amazon.com.br/mundo-depois-Livro-origem-Netflix-ebook/dp/B0CJN6K8NC"><img
+                                <a href="https://www.amazon.com.br/mundo-depois-Livro-origem-Netflix-ebook/dp/B0CJN6K8NC" target=" "><img
                                         src="https://m.media-amazon.com/images/I/71CuLBjVCPL._SL1500_.jpg"
                                         alt="capa do livro" width=""></a>
                                 <div class="p-1">
@@ -190,7 +190,7 @@
                         <hr>
                         <div class="row">
                             <div class="d-flex">
-                                <a href="#"><img src="https://thatdev.neocities.org/milvidas/imgs/bienal.png"
+                                <a href="#" target=" "><img src="https://thatdev.neocities.org/milvidas/imgs/bienal.png"
                                         alt="ilustração" width="200px"></a>
                                 <div class="p-1">
                                     <h5>Bienal do Livro Rio anuncia próxima data: junho de 2025</h5>

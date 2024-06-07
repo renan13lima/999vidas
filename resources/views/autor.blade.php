@@ -114,10 +114,54 @@
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a class="dropdown-item" href="#">Denunciar postagem</a>
+                                                <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#postagem"
+                                                    data-bs-whatever="@post" href="#">Denunciar Postagem</a>
                                             </li>
                                         </ul>
                                     </i>
+
+                                    <!--      FORMULARIO  DENUNCIAR POSTAGEM        -->
+                                    <div class="modal fade" id="postagem" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title"
+                                                        style="font-family: 'Courier New', Courier, monospace; font-weight: 600"
+                                                        id="exampleModalLabel">Denunciar Postagem</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <form method="POST" action="{{ url('denuncia_postagem') }}">
+                                                        @csrf
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Lamentamos o
+                                                                incômodo
+                                                                que possa estar sentindo. <br>
+                                                                Digite abaixo o motivo desta denúncia.</label>
+                                                            <input type="hidden" name="denunciado_id"
+                                                                value="{{ $value->user->id }}">
+                                                            <input type="hidden" name="postagem_id"
+                                                                value="{{ $value->id }}">
+                                                            <textarea class="form-control" id="message-text" name="conteudo"></textarea>
+                                                        </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Fechar</button>
+                                                    <button type="submit" class="btn fw-bold"
+                                                        value="Salvar">Enviar</button>
+                                                </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
                                 </div>
 
                                 <p>{!! $value->conteudo !!}</p>

@@ -4,9 +4,28 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\DenunciaPostagem;
+use App\Models\Postagem;
 
 class DenunciaPostagemController extends Controller
 {
+
+    public function justificativa(Request $request)
+    {
+       //dd($request->all());
+       $denuncia_postagem = DenunciaPostagem::find($request->denuncia_id);
+       $denuncia_postagem->status = $request->status;
+       $denuncia_postagem->justificativa = $request->justificativa;
+       $denuncia_postagem->save();
+
+       if($request->status == 'Aceito'){
+            $postagem = Postagem::find($request->postagem_id);
+            $postagem->status = 0;
+            $postagem->save();
+
+       }
+    }
+
+
     public function denuncia_postagem(Request $request)
     {
         $denuncia_postagem = new DenunciaPostagem;
