@@ -8,10 +8,14 @@ use App\Models\Categoria;
 
 class PostagemController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+
+    //Display a listing of the resource.
+
+    /*
+
+    ORIGINAL = MOSTRANDO TODAS AS POSTAGENS, DO ADM E DOS USUARIOS
+
+        public function index()
     {
         $user_id = auth()->user()->id;
        // $postagens = Postagem::where('user_id', $user_id)->orderBy('titulo', 'ASC')->get();
@@ -23,6 +27,21 @@ class PostagemController extends Controller
             $postagens = Postagem::where('status', 1)->where('user_id', $user_id)->orderBy('titulo', 'ASC')->get();
         }
         return view('postagem.index', ['postagens' => $postagens]);
+    }
+     */
+
+    public function index()
+    {
+        $user_id = auth()->user()->id;
+        $postagens = Postagem::where('status', 1)->where('user_id', $user_id)->orderBy('titulo', 'ASC')->get();
+        return view('postagem.index', ['postagens' => $postagens]);
+    }
+
+    public function usuario_postagem()
+    {
+        $user_id = auth()->user()->id;
+        $postagens = Postagem::where('status', 1)->where('user_id', '<>', $user_id)->orderBy('titulo', 'ASC')->get();
+        return view('postagem.usuario_postagem', ['postagens' => $postagens]);
     }
 
     /**

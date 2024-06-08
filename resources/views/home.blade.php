@@ -172,9 +172,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-
-
                                             </div>
 
                                             <p class="card-text">{!! $value->conteudo !!}</p>

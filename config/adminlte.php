@@ -364,12 +364,13 @@ return [
                     'can'  => 'is_admin',
                 ],
                 [
-                    'text' => 'Usuario Postagens',
+                    'text' => 'Usuario Postagem',
                     'url'  => 'usuario_postagem',
                     'icon' => 'fa-solid fa fa-address-book',
                     'can'  => 'is_admin',
                 ],
         ],
+
 
 
         ],

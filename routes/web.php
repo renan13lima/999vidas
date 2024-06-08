@@ -7,7 +7,6 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PerfilController;
 //use App\Http\Controllers\Auth\LoginController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -72,6 +71,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/denuncia_postagem/store', [App\Http\Controllers\DenunciaPostagemController::class, 'store'])->middleware('can:is_admin')->name('denuncia_postagem.store');
 
     Route::post('/denuncia/justificativa', [App\Http\Controllers\DenunciaPostagemController::class, 'justificativa'])->middleware('can:is_admin')->name('justificativa');
+
     // ------------------------------ CRUD CATEGORIA ---------------------------------------------
 
     // LISTAR GET
@@ -98,10 +98,15 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/categoria/{id}', [CategoriaController::class, 'destroy'])->middleware('can:is_admin')->name('categoria.destroy');
 
 
+
+
     // ------------------------------ CRUD POSTAGEM ---------------------------------------------
 
     // LISTAR GET
     Route::get('/postagem', [PostagemController::class, 'index'])->name('postagem.index');
+
+     // LISTAR GET
+     Route::get('/usuario_postagem', [PostagemController::class, 'usuario_postagem'])->name('usuario_postagem');
 
     // CREATE GET / STORE POST
     // create

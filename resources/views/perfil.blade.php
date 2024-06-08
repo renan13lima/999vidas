@@ -30,9 +30,7 @@
 
         <!--           FORMULARIO          -->
         <div class="container text-center">
-
             <div class="row justify-content-center">
-
                 <section class="form-box d-flex justify-content-center align-items-center mt-5">
                     <div class="border rounded-3 p-5 shadow box-area">
 
@@ -70,14 +68,10 @@
                             <div class="mb-3 text-muted text-center">
                                 <button type="submit" class="btn fw-bold" value="Salvar">Salvar</button>
                             </div>
-
                         </form>
-
-
                     </div>
+                </section>
             </div>
-            </section>
-
         </div>
 
         <!--    BOOTSTRAP      -->

@@ -17,11 +17,10 @@ class DenunciaPostagemController extends Controller
        $denuncia_postagem->justificativa = $request->justificativa;
        $denuncia_postagem->save();
 
-       if($request->status == 'Aceito'){
+       if($request->status == 'Aceito') {
             $postagem = Postagem::find($request->postagem_id);
             $postagem->status = 0;
             $postagem->save();
-
        }
     }
 
