@@ -369,12 +369,8 @@ return [
                     'icon' => 'fa-solid fa fa-address-book',
                     'can'  => 'is_admin',
                 ],
+                ],
         ],
-
-
-
-        ],
-
         [
             'type'         => 'navbar-search',
             'text'         => 'search',
@@ -384,8 +380,6 @@ return [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
-
-
 
         // Sidebar items:
         /*[

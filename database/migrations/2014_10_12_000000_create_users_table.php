@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('role')->default('normal');
             $table->string('nick')->nullable();
             $table->text('biografia')->default('normal');
-            $table->longText('foto')->nullable();
+            $table->binary('foto')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

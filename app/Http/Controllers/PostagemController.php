@@ -80,7 +80,6 @@ class PostagemController extends Controller
         $postagem->save();
 
         return redirect('postagem')->with('status', 'Postagem salva com sucesso!');
-
     }
 
     /**
@@ -130,7 +129,6 @@ class PostagemController extends Controller
         $postagem->save();
 
         return redirect('postagem')->with('status', 'Postagem atualizada com sucesso!');
-
     }
 
     /**
