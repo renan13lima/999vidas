@@ -44,18 +44,12 @@ class PostagemController extends Controller
         return view('postagem.usuario_postagem', ['postagens' => $postagens]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         $categorias = Categoria::orderBy('nome', 'ASC')->get();
         return view('postagem.create', ['categorias' => $categorias]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         //dd($request->all());
@@ -82,18 +76,12 @@ class PostagemController extends Controller
         return redirect('postagem')->with('status', 'Postagem salva com sucesso!');
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(string $id)
     {
         $postagem = Postagem::find($id);
         return view('postagem.show', ['postagem' => $postagem]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(string $id)
     {
         $postagem = Postagem::find($id);
@@ -101,9 +89,6 @@ class PostagemController extends Controller
         return view('postagem.edit', ['postagem' => $postagem, 'categorias' => $categorias]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
         //dd($id);
@@ -131,9 +116,6 @@ class PostagemController extends Controller
         return redirect('postagem')->with('status', 'Postagem atualizada com sucesso!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(string $id)
     {
         $postagem = Postagem::find($id);

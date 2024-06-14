@@ -7,26 +7,18 @@ use App\Models\Categoria;
 
 class CategoriaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
         $categorias = Categoria :: orderBy('nome','ASC')-> get();
         return view('categoria.index', ['categorias' => $categorias]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         return view('categoria.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $messages = [

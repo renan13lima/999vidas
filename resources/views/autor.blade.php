@@ -51,7 +51,7 @@
 
             .footerBox {
                 border-top: 2px solid #d4cec3;
-                font-size: 12px;
+                font-size: 15px;
             }
 
             .perfilUser {
@@ -77,7 +77,7 @@
             .bio {}
 
             .Perfil span {
-                font-size: 12px;
+                font-size: 15px;
                 color: gray;
             }
 
@@ -89,6 +89,15 @@
     </head>
 
     <body>
+
+
+    @if (session('status'))
+            <div class="alert alert-success mt-3">
+                {{ session('status') }}
+            </div>
+        @endif
+
+
         <div class="container">
 
             <header class="Perfil text-center">

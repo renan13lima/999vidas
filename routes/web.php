@@ -30,6 +30,10 @@ Route::get('/', function () {
 
 //Route::get('/', [BlogController::class, 'index'])->name('blog.index');
 
+
+
+// ----------------------------- PAGINA INICIAL PÚBLICA ---------------------------------------------------
+
 Route::get('/', function () {
     return view('inicio');
 });
@@ -42,7 +46,15 @@ Route::get('/contato', function () {
     return view('contato');
 });
 
-Auth::routes();
+// ----------------------------- LOGIN/LOGOUT/CADASTRO ---------------------------------------------------
+
+Route::get('/login',[App\Http\Controllers\UserController::class,'login'])->name('user.login');
+Route::post('/loginvalidate',[App\Http\Controllers\UserController::class,'loginvalidate'])->name('user.loginvalidate');
+Route::get('/logout',[App\Http\Controllers\UserController::class,'logout'])->name('user.logout');
+
+// ----------------------------- PAGINA DENTRO DO SISTEMA / PRIVADO ---------------------------------------------------
+
+//Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
 
@@ -96,8 +108,6 @@ Route::middleware(['auth'])->group(function () {
 
     // DESTROY DELETE
     Route::delete('/categoria/{id}', [CategoriaController::class, 'destroy'])->middleware('can:is_admin')->name('categoria.destroy');
-
-
 
 
     // ------------------------------ CRUD POSTAGEM ---------------------------------------------
