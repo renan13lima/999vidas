@@ -16,6 +16,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        h1 {
+            color: #4D3E3E;
+            font-weight: bold;
+        }
+
+        p {
+            color: #4D3E3E;
+        }
+
         nav {
             color: #604b32;
             background: rgb(247, 246, 240);
@@ -51,7 +69,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand">
                 <img src="https://thatdev.neocities.org/milvidas/imgs/1.png" alt="Bootstrap" width="30"
                     height="24">
             </a>
@@ -65,25 +83,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://thatdev.neocities.org/milvidas/home">Inicio</a>
+                        <a class="nav-link" href="{{ url('inicio') }}">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://thatdev.neocities.org/milvidas/sobre">Sobre</a>
+                        <a class="nav-link" href="{{ url('sobre') }}">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://thatdev.neocities.org/milvidas/contato">Contato</a>
+                        <a class="nav-link" href="{{ url('contato') }}">Contato</a>
                     </li>
                 </ul>
 
             </div>
         </div>
-
-    </nav>  <!-- FIM DO MENU FIXO -->
+    </nav>
 
     <!--      FORMULARIO       -->
 
     <!----------------------- Main Container -------------------------->
-    <div class="container d-flex justify-content-center align-items-center vh-100 my-5">
+    <div class="container d-flex justify-content-center align-items-center mt-5">
 
         <!----------------------- Login Container -------------------------->
         <div class="row border rounded-5 p-3 bg-white shadow box-area">
@@ -105,9 +122,7 @@
                             MIL VIDAS</h2>
                         <p><small class="text-wrap text-center"
                                 style="font-family: 'Courier New', Courier, monospace;">"Lute, Acredite, Conquiste,
-                                Perca,
-                                Deseje, Espere, Alcance, Invada, Caia...
-                                Seja tudo o quiser ser, mas, acima de
+                                Perca, Deseje, Espere, Alcance, Invada, Caia... Seja tudo o quiser ser, mas, acima de
                                 tudo, seja sempre você."</small></p>
                     </div>
 
@@ -130,17 +145,14 @@
                         </div>
 
                         <div class="mb-3 text-muted text-center">
-                            <button type="submit" class="btn fw-bold">Entrar</button>
-                        </div>
-
-                        <div class="text-center">
+                            <button type="submit" class="btn fw-bold">Entrar</button><br>
                             <a href="#" class="forget">Esqueceu a senha?</a>
                         </div>
 
                     </form>
 
-                    <div class="mt-3 text-center">
-                        <a href="https://thatdev.neocities.org/milvidas/cadastro" class="text-dark"><button
+                    <div class="mt-1 text-center">
+                        <a href="{{ url('cadastrar') }}" class="text-dark"><button
                                 type="submit" class="btn fw-bold">Criar Conta</button></a>
                     </div>
 
@@ -150,12 +162,9 @@
     </div>
 
     <!--     RODAPE       -->
-    <footer class="rodape text-center pb-4">
+    <footer class="rodape text-center pb-4 fixed-bottom">
         <div class="font-monospace p-2">M I L V I D A S</div>
     </footer>
-
-    <!-- Custom JS -->
-    <script src="#"></script>
 
     <!--    BOOTSTRAP   JS   -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -166,4 +175,5 @@
     <script src="https://kit.fontawesome.com/651d079c52.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

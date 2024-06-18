@@ -312,22 +312,6 @@ return [
             'url'  => 'perfil',
             'icon' => 'fas fa-fw fa-user',
         ],
-        /*[
-            'text' => 'Notificações',
-            'url'  => '#',
-            'icon' => 'fas fa-fw fa-bell',
-        ],
-        [
-            'text' => 'Estante',
-            'url'  => '#',
-            'icon' => 'fas fa-fw fa-book',
-        ],
-        [
-            'text' => 'Mais',
-            'url'  => '#',
-            'icon' => 'fas fa-fw fa-ellipsis-h',
-        ],*/
-
         [
             'text' => 'Postagem',
             'url'  => 'postagem',
@@ -371,7 +355,7 @@ return [
                 ],
                 ],
         ],
-        [
+        /*[
             'type'         => 'navbar-search',
             'text'         => 'search',
             'topnav_right' => true,
@@ -379,7 +363,7 @@ return [
         [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
-        ],
+        ],*/
 
         // Sidebar items:
         /*[

@@ -22,6 +22,7 @@ class DenunciaPostagemController extends Controller
             $postagem->status = 0;
             $postagem->save();
        }
+       return back()->withInput();
     }
 
     public function denuncia_postagem(Request $request)

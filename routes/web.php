@@ -52,6 +52,8 @@ Route::get('/login',[App\Http\Controllers\UserController::class,'login'])->name(
 Route::post('/loginvalidate',[App\Http\Controllers\UserController::class,'loginvalidate'])->name('user.loginvalidate');
 Route::get('/logout',[App\Http\Controllers\UserController::class,'logout'])->name('user.logout');
 
+Route::get('/cadastrar',[App\Http\Controllers\UserController::class,'cadastrar'])->name('user.cadastrar');
+
 // ----------------------------- PAGINA DENTRO DO SISTEMA / PRIVADO ---------------------------------------------------
 
 //Auth::routes();

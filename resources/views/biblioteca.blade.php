@@ -66,7 +66,7 @@
                 <h5>CLÁSSICOS</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <div>
-                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg"
+                        <a href="#" target=" "><img src="http://localhost/999vidas/public/images/capa20MilLeguas.jpg"
                                 class="img-fluid" alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
                     </div>
                     <div>

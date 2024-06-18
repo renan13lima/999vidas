@@ -42,7 +42,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand">
                 <img src="https://thatdev.neocities.org/milvidas/imgs/1.png" alt="Bootstrap" width="30"
                     height="24">
             </a>

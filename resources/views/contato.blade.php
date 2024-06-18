@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand">
                 <img src="https://thatdev.neocities.org/milvidas/imgs/1.png" alt="Bootstrap" width="30"
                     height="24">
             </a>
@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('inicio')}}">Inicio</a>
+                        <a class="nav-link" href="{{ url('home')}}">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('sobre')}}">Sobre</a>
@@ -57,9 +57,9 @@
 
                     <form action="#" method="POST">
 
-                        <h1 style="font-family: 'Courier New', Courier, monospace; font-weight: 600">Duvidas ou
+                        <h1 style="font-family: 'Courier New', Courier, monospace; font-weight: 600">Dúvidas ou
                             Sugestões</h1>
-                        <p>Nos envie uma mensagem pelo formulario abaixo ou um e-mail
+                        <p>Envie-nos uma mensagem pelo formulário abaixo ou um e-mail
                             para <span>contato-on@bol.com</span>
                         </p>
 

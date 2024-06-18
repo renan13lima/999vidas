@@ -47,7 +47,7 @@ class UserController extends Controller
         Auth::logout();
         $request->session()->invalidate();
 
-        return redirect('/');
+        return redirect('inicio');
     }
 
     public function cadastrar(Request $request){
