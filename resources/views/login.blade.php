@@ -152,7 +152,7 @@
                     </form>
 
                     <div class="mt-1 text-center">
-                        <a href="{{ url('cadastrar') }}" class="text-dark"><button
+                        <a href="{{ url('cadastro') }}" class="text-dark"><button
                                 type="submit" class="btn fw-bold">Criar Conta</button></a>
                     </div>
 

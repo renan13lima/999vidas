@@ -14,7 +14,6 @@
                         <strong> Criação:</strong>
                         {{ \Carbon\Carbon::parse($denuncia_postagem->created_at)->format('d/m/Y h:i:s') }}<br>
 
-
                         <!-- JUSTIFICANDO -->
                         <div class="mx-auto col-10 my-3">
                             <form action="{{ url('denuncia/justificativa') }}" method="post">
@@ -30,7 +29,6 @@
                                         <option value="Aceito">Aceito</option>
                                         <option value="Rejeitado">Rejeitado</option>
                                     </select>
-
                                 </div>
 
                                 <div class="mb-3 mx-auto col-8">

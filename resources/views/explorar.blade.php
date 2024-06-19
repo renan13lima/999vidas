@@ -43,13 +43,13 @@
     <body>
         <div class="container-fluid">
             <main id="main">
-                <div class="container">
+                <!--<div class="container">
                     <section>
                         <div class="text-center">
                             <h1 class="font-monospace">M I L V I D A S</h1>
                         </div>
 
-                        <!-- CARROSSEL -->
+                        <!-- CARROSSEL
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -87,9 +87,13 @@
                             </button>
                         </div>
                     </section>
-                </div>
+                </div>-->
 
                 <div class="container">
+                    <div class="text-center">
+                        <h1 class="font-monospace">M I L V I D A S</h1>
+                    </div>
+
                     <section class="my-5">
                         <h3 class="text-center">EM ALTA</h3>
                         <div class="owl-carousel owl-theme">

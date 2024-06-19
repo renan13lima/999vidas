@@ -33,13 +33,8 @@
                                     <td><a class="btn btn-primary" href="{{ url('/denuncia_usuario/' . $value->id) }}"
                                             role="button">Visualizar</a></td>
                                     <td>
-                                        <form method="GET" action="{{ url('/denuncia_usuario_show/' . $value->id) }}">
-                                            @csrf
-                                            @method('DELETE')
-                                            <input type="submit" class="form-control" value="Deletar">
-                                        </form>
+                                        {{ $value->status }}
                                     </td>
-                                    </tr>
                                 @endforeach
                             </tbody>
                         </table>

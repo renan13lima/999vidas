@@ -42,12 +42,9 @@ class UserController extends Controller
         }
     }
 
-    public function logout(Request $request): RedirectResponse {
-
-        Auth::logout();
-        $request->session()->invalidate();
-
-        return redirect('inicio');
+    public function cadastro()
+    {
+        return view('cadastro');
     }
 
     public function cadastrar(Request $request){
@@ -60,5 +57,15 @@ class UserController extends Controller
 
         return redirect('login')->with('status', 'USUÁRIO CADASTRADO COM SUCESSO');
     }
+
+    public function logout(Request $request): RedirectResponse {
+
+        Auth::logout();
+        $request->session()->invalidate();
+
+        return redirect('inicio');
+    }
+
+
 
 }

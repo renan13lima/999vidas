@@ -50,9 +50,11 @@ Route::get('/contato', function () {
 
 Route::get('/login',[App\Http\Controllers\UserController::class,'login'])->name('user.login');
 Route::post('/loginvalidate',[App\Http\Controllers\UserController::class,'loginvalidate'])->name('user.loginvalidate');
-Route::get('/logout',[App\Http\Controllers\UserController::class,'logout'])->name('user.logout');
 
-Route::get('/cadastrar',[App\Http\Controllers\UserController::class,'cadastrar'])->name('user.cadastrar');
+Route::get('/cadastro',[App\Http\Controllers\UserController::class,'cadastro'])->name('user.cadastro');
+Route::post('/cadastrar',[App\Http\Controllers\UserController::class,'cadastrar'])->name('user.cadastrar');
+
+Route::get('/logout',[App\Http\Controllers\UserController::class,'logout'])->name('user.logout');
 
 // ----------------------------- PAGINA DENTRO DO SISTEMA / PRIVADO ---------------------------------------------------
 

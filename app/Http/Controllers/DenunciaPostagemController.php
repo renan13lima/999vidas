@@ -8,7 +8,6 @@ use App\Models\Postagem;
 
 class DenunciaPostagemController extends Controller
 {
-
     public function justificativa(Request $request)
     {
        //dd($request->all());
@@ -43,11 +42,6 @@ class DenunciaPostagemController extends Controller
         return view('denuncia.denuncia_postagem_index', ['denuncia_postagem' => $denuncia_postagem]);
     }
 
-    public function create()
-    {
-        //
-    }
-
     public function store(Request $request)
     {
         $denuncia_postagem = new DenunciaPostagem;
@@ -63,20 +57,10 @@ class DenunciaPostagemController extends Controller
         return view('denuncia.denuncia_postagem_show', ['denuncia_postagem' => $denuncia_postagem]);
     }
 
-    public function edit(string $id)
-    {
-        //
-    }
-
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
     public function destroy(string $id)
     {
         $denuncia_postagem = DenunciaPostagem::find($id);
         $denuncia_postagem->delete();
-        return redirect('denuncia.denuncia_postagem_show')->with('status', 'Denúncia resolvida');
+        return back()->with('status', 'Denúncia solucionada');
     }
 }

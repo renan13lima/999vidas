@@ -61,63 +61,60 @@
             <p>Aqui você encontra livros gratuitos eletrônicos, para incentivar e estimular a leitura entre os usuários.<br>
             Basta clicar nas imagens e embarcar nesses mil mundos disponíveis</p>
 
-            <!-- CLÁSSICOS -->
+            <!-- ESSENCIAIS -->
             <div class="row biblioteca text-center mt-3 py-4">
-                <h5>CLÁSSICOS</h5>
+                <h5>ESSENCIAIS</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <div>
                         <a href="#" target=" "><img src="http://localhost/999vidas/public/images/capa20MilLeguas.jpg"
                                 class="img-fluid" alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
                     </div>
                     <div>
-                        <a href="#" target=" "><img
-                                src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg" class="img-fluid"
-                                alt="capa do livro O pequeno Principe" width=""></a>
-                    </div>
-                    <div>
-                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg"
+                        <a href="#" target=" "><img src="http://localhost/999vidas/public/images/capaAlicePaisMaravilhas.jpg"
                                 class="img-fluid" alt="capa do livro Alice no Pais das Maravilhas" width=""></a>
                     </div>
                     <div>
-                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg"
+                        <a href="#" target=" "><img
+                                src="http://localhost/999vidas/public/images/capaPequenoPrincipe.jpg" class="img-fluid"
+                                alt="capa do livro O pequeno Principe" width=""></a>
+                    </div>
+                    <div>
+                        <a href="#" target=" "><img src="http://localhost/999vidas/public/images/capaAliceAtravesEspelho.jpg"
                                 class="img-fluid" alt="capa do livro Alice Atraves do Espelho" width=""></a>
                     </div>
                     <div>
-                        <a href="#" target=" "><img
-                                src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
-                                class="img-fluid" alt="capa do livro A princesa que Salva a Si mesmo nesse Livro"
+                        <a href="https://renanlima.neocities.org/Mil_Vidas/Frankenstein.pdf" target=" "><img
+                                src="http://localhost/999vidas/public/images/capaFrankenstein.jpg"
+                                class="img-fluid" alt="capa do livro Frankenstein"
                                 width=""></a>
                     </div>
                 </div>
             </div>
             </div>
 
-            <!-- ATUAIS -->
+            <!-- CLÁSSICOS -->
             <div class="row biblioteca text-center mt-5 py-4 burlywood">
-                <h5>ATUAIS</h5>
+                <h5>CLÁSSICOS</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <div>
-                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg"
-                                class="img-fluid" alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
+                        <a href="https://renanlima.neocities.org/Mil_Vidas/O%20Retrato%20de%20Dorian%20Grey.pdf" target=" ">
+                            <img src="http://localhost/999vidas/public/images/capaORetratoDeDorianGray.jpg"
+                            class="img-fluid" alt="capa do livro O Retrato de Dorian Grey" width=""></a>
                     </div>
                     <div>
-                        <a href="#" target=" "><img
-                                src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg" class="img-fluid"
-                                alt="capa do livro O pequeno Principe" width=""></a>
+                        <a href="https://renanlima.neocities.org/Mil_Vidas/Os%20Sofrimentos%20do%20Jovem%20Werther.pdf" target=" ">
+                            <img src="http://localhost/999vidas/public/images/capaOsSofrimentosDoJovemWerther.jpg"
+                            class="img-fluid" alt="capa do livro Os Sofrimentos do Jovem Werther" width=""></a>
                     </div>
                     <div>
-                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg"
-                                class="img-fluid" alt="capa do livro Alice no Pais das Maravilhas" width=""></a>
+                        <a href="https://renanlima.neocities.org/Mil_Vidas/O%20Beijo%20No%20Asfalto.pdf" target=" ">
+                            <img src="http://localhost/999vidas/public/images/capaOBeijoNoAsfalto.jpg"
+                            class="img-fluid" alt="capa do livro O Beijo no Asfalto" width=""></a>
                     </div>
                     <div>
-                        <a href="#" target=" "><img src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg"
-                                class="img-fluid" alt="capa do livro Alice Atraves do Espelho" width=""></a>
-                    </div>
-                    <div>
-                        <a href="#" target=" "><img
-                                src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
-                                class="img-fluid" alt="capa do livro A princesa que Salva a Si mesmo nesse Livro"
-                                width=""></a>
+                        <a href="https://renanlima.neocities.org/Mil_Vidas/A%20Obscena%20Senhora%20D.pdf" target=" ">
+                            <img src="http://localhost/999vidas/public/images/capaAObscenaSenhoraD.jpg"
+                            class="img-fluid" alt="capa do livro A Obscena Senhora D" width=""></a>
                     </div>
                 </div>
             </div>
@@ -127,69 +124,58 @@
                 <h5>INDICAÇÕES</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <div>
-                        <a href="https://thatdev.neocities.org/0Books0/Jules%20Verne%2003.pdf" target=" ">
-                            <img src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg" class="img-fluid"
-                                alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
+                        <a href="https://renanlima.neocities.org/Mil_Vidas/Cr%C3%B4nica%20de%20um%20Amor%20Louco.pdf" target=" ">
+                            <img src="http://localhost/999vidas/public/images/capaCronicaDeUmAmorLouco.jpg" class="img-fluid"
+                                alt="capa do livro Crônica de Um Amor Louco" width=""></a>
                     </div>
 
                     <div>
-                        <a href="https://thatdev.neocities.org/0Books0/O%20Pequeno%20Pr%C3%ADncipe.pdf"
+                        <a href="https://renanlima.neocities.org/Mil_Vidas/Pele%20Negra%20M%C3%A1scaras%20Brancas.pdf"
                             target=" ">
-                            <img src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg"
-                                class="img-fluid" alt="capa do livro O pequeno Principe" width=""></a>
+                            <img src="http://localhost/999vidas/public/images/capaPeleNegra,MascarasBrancas.jpg" class="img-fluid"
+                                alt="capa do livro Pele Negra, Máscaras Brancas" width=""></a>
                     </div>
 
                     <div>
                         <a href="https://thatdev.neocities.org/0Books0/Por%20lugares%20incriveis%20-%20Jennifer%20Niven.pdf"
                             target=" ">
-                            <img src="https://thatdev.neocities.org/milvidas/imgs/capabooks/porLugaresIncriveis.jpg"
-                                class="img-fluid" alt="capa do livro por lugares incriveis" width=""></a>
+                            <img src="http://localhost/999vidas/public/images/capaPorLugaresIncriveis.jpg" class="img-fluid"
+                                alt="capa do livro Por Lugares Incríveis" width=""></a>
                     </div>
 
                     <div>
                         <a href="https://thatdev.neocities.org/0Books0/Lovecraft-CorCaiuCeu.pdf" target=" ">
-                            <img src="https://thatdev.neocities.org/lel/imgs/capas/Lovecraft01.jpg"
-                                class="img-fluid" alt="capa do livro Lovrecraft" width=""></a>
+                            <img src="http://localhost/999vidas/public/images/capaCorCaiuCeu.jpg" class="img-fluid"
+                                alt="capa do livro A Cor Que Caiu do Céu" width=""></a>
                     </div>
 
                     <div>
                         <a href="https://thatdev.neocities.org/0Books0/Pai%20Rico,%20Pai%20Pobre.pdf"
                             target=" ">
-                            <img src="https://thatdev.neocities.org/milvidas/imgs/capabooks/opairicoOpaipobre.jpg"
-                                class="img-fluid" alt="capa do livro O pai Rico, O pai" width=""></a>
+                            <img src="http://localhost/999vidas/public/images/capaPaiRicoPaiPobre.jpg"
+                                class="img-fluid" alt="capa do livro Pai Rico, Pai Pobre" width=""></a>
                     </div>
                 </div>
             </div>
 
-            <!-- FANTASIA -->
+            <!-- QUADRINHOS -->
             <div class="row biblioteca text-center mt-5 py-4 burlywood">
-                <h5>FANTASIA</h5>
+                <h5>QUADRINHOS</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <div>
-                        <a href="#" target=" "><img
-                                src="https://thatdev.neocities.org/lel/imgs/capas/20lesub.jpg" class="img-fluid"
-                                alt="capa do livro 20 MIL LÉGUAS SUBMARINAS" width=""></a>
+                        <a href="https://renanlima.neocities.org/Mil_Vidas/A%20Diferen%C3%A7a%20Invisivel.pdf" target=" ">
+                            <img src="http://localhost/999vidas/public/images/capaADiferençaInvisivel.jpg"
+                            class="img-fluid" alt="capa do quadrinho A Diferença Invisível" width=""></a>
                     </div>
                     <div>
-                        <a href="#" target=" "><img
-                                src="https://thatdev.neocities.org/lel/imgs/capas/OpQPrincipe.jpg" class="img-fluid"
-                                alt="capa do livro O pequeno Principe" width=""></a>
+                        <a href="https://renanlima.neocities.org/Mil_Vidas/Batman%20A%20Piada%20Mortal.pdf" target=" ">
+                            <img src="http://localhost/999vidas/public/images/capaBatmanAPiadaMortal.jpg"
+                            class="img-fluid" alt="capa do quadrinho Batman - A Piada Mortal" width=""></a>
                     </div>
                     <div>
-                        <a href="#" target=" "><img
-                                src="https://thatdev.neocities.org/lel/imgs/capas/alice01.jpg" class="img-fluid"
-                                alt="capa do livro Alice no Pais das Maravilhas" width=""></a>
-                    </div>
-                    <div>
-                        <a href="#" target=" "><img
-                                src="https://thatdev.neocities.org/lel/imgs/capas/alice02.jpg" class="img-fluid"
-                                alt="capa do livro Alice Atraves do Espelho" width=""></a>
-                    </div>
-                    <div>
-                        <a href="#" target=" "><img
-                                src="https://m.media-amazon.com/images/I/510CMxWIujL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
-                                class="img-fluid" alt="capa do livro A princesa que Salva a Si mesmo nesse Livro"
-                                width=""></a>
+                        <a href="https://renanlima.neocities.org/Mil_Vidas/Ogiva.pdf" target=" ">
+                            <img src="http://localhost/999vidas/public/images/capaOgiva.jpg"
+                            class="img-fluid" alt="capa do quadrinho Ogiva" width=""></a>
                     </div>
                 </div>
             </div>

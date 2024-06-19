@@ -74,12 +74,12 @@
 
             </div>
         </div>
-    </nav>    <!--          FIM DO MENU FIXO          -->
+    </nav>
 
-    <!--          FORMULARIO       -->
+    <!-- FORMULARIO -->
 
     <!----------------------- Main Container -------------------------->
-    <div class="container d-flex justify-content-center align-items-center vh-100 my-5">
+    <div class="container d-flex justify-content-center align-items-center my-5">
 
         <!----------------------- Login Container -------------------------->
         <div class="col-md-10 row border rounded-5 p-3 bg-white shadow box-area">
@@ -100,9 +100,16 @@
                         <h2 class="fs-2 my-3" style="font-family: 'Courier New', Courier, monospace; font-weight: 600">
                             MIL VIDAS</h2>
 
-                        <form action="#" method="POST">
+                        <form action="{{ url('cadastrar') }}" method="POST">
+                            @csrf
 
-                            <!-- @csrf -->
+                            <div class="mb-3">
+                                <div class="form-floating mb-3 mt-3 text-muted">
+                                    <input type="text" class="form-control" id="name" placeholder=""
+                                        name="name" required>
+                                    <label for="name">nome</label>
+                                </div>
+                            </div>
 
                             <div class="mb-3">
                                 <div class="form-floating mb-3 mt-3 text-muted">
@@ -141,7 +148,7 @@
     </div>
 
     <!--     RODAPE       -->
-    <footer class="rodape text-center pb-4">
+    <footer class="rodape text-center pb-4 fixed-bottom">
         <div class="font-monospace p-2">M I L V I D A S</div>
     </footer>
 
