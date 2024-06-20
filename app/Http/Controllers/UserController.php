@@ -25,7 +25,7 @@ class UserController extends Controller
             return redirect('login')->with('status', 'ID de usuário ou senha incorreta.');
 
             //redirectback (mesma forma do create)
-            dd('Não existe');
+
         }
 
         $user = User::where('email', $request->email)->first();
@@ -63,7 +63,7 @@ class UserController extends Controller
         Auth::logout();
         $request->session()->invalidate();
 
-        return redirect('inicio');
+        return redirect('/');
     }
 
 

@@ -24,6 +24,12 @@
 
     <body>
 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container d-flex justify-content-end">
+                <a class="border p-1 nav-link fw-bold" href="{{ url('logout') }}">Logout</a>
+            </div>
+        </nav>
+
         @if (session('status'))
             <div class="alert alert-success mt-3">
                 {{ session('status') }}
