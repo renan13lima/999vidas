@@ -83,7 +83,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('inicio') }}">Inicio</a>
+                        <a class="nav-link" href="{{ url('/') }}">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('sobre') }}">Sobre</a>
@@ -146,14 +146,14 @@
 
                         <div class="mb-3 text-muted text-center">
                             <button type="submit" class="btn fw-bold">Entrar</button><br>
-                            <a href="#" class="forget">Esqueceu a senha?</a>
+                        <!--<a href="#" class="forget">Esqueceu a senha?</a>-->
                         </div>
 
                     </form>
 
                     <div class="mt-1 text-center">
                         <a href="{{ url('cadastro') }}" class="text-dark"><button
-                                type="submit" class="btn fw-bold">Criar Conta</button></a>
+                                type="submit" class="btn fw-bold">Crie sua conta</button></a>
                     </div>
 
                 </div>

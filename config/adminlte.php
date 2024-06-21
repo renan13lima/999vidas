@@ -64,8 +64,8 @@ return [
     */
 
     'logo' => 'Mil Vidas',
-    'logo_img' => 'https://thatdev.neocities.org/milvidas/imgs/1.png',
-    //'logo_img' => url('/images/logoMV.png'),
+    //'logo_img' => 'https://thatdev.neocities.org/milvidas/imgs/1.png',
+    'logo_img' => 'http://localhost/999vidas/public/images/logoMV.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',

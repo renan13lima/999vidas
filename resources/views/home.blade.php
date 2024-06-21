@@ -26,7 +26,7 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container d-flex justify-content-end">
-                <a class="border p-1 nav-link fw-bold" href="{{ url('logout') }}">Logout</a>
+                <a class="border p-2 mt-2 nav-link fw-bold" href="{{ url('logout') }}">Logout</a>
             </div>
         </nav>
 
@@ -37,7 +37,6 @@
         @endif
 
         <main id="main">
-
             <!--   BARRA DE NAVEGAÇÃO    -->
             <ul class="nav nav-pills pb-3 justify-content-center" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">

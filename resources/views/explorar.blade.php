@@ -41,57 +41,17 @@
     </head>
 
     <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container d-flex justify-content-end">
+                <a class="border p-2 mt-2 nav-link fw-bold" href="{{ url('logout') }}">Logout</a>
+            </div>
+        </nav>
+
         <div class="container-fluid">
             <main id="main">
-                <!--<div class="container">
-                    <section>
-                        <div class="text-center">
-                            <h1 class="font-monospace">M I L V I D A S</h1>
-                        </div>
-
-                        <!-- CARROSSEL
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="https://thatdev.neocities.org/milvidas/imgs/post-biblion.webp"
-                                        class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://biblion.odilo.us/" target=" ">
-                                        <img src="https://thatdev.neocities.org/milvidas/imgs/post-biblion.webp"
-                                            class="d-block w-100" alt="...">
-                                    </a>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://thatdev.neocities.org/milvidas/imgs/post-biblion.webp"
-                                        class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </section>
-                </div>-->
-
                 <div class="container">
                     <div class="text-center">
-                        <h1 class="font-monospace">M I L V I D A S</h1>
+                        <h1 class="font-monospace">E X P L O R A R</h1>
                     </div>
 
                     <section class="my-5">

@@ -48,7 +48,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand">
                 <img src="https://thatdev.neocities.org/milvidas/imgs/1.png" alt="Bootstrap" width="30"
                     height="24">
             </a>
@@ -62,13 +62,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://thatdev.neocities.org/milvidas/home">Inicio</a>
+                        <a class="nav-link" href="{{ url('/') }}">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://thatdev.neocities.org/milvidas/sobre">Sobre</a>
+                        <a class="nav-link" href="{{ url('sobre') }}">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://thatdev.neocities.org/milvidas/contato">Contato</a>
+                        <a class="nav-link" href="{{ url('contato') }}">Contato</a>
                     </li>
                 </ul>
 

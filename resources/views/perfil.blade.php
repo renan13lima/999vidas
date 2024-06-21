@@ -28,6 +28,12 @@
 
     <body>
 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container d-flex justify-content-end">
+                <a class="border p-2 mt-2 nav-link fw-bold" href="{{ url('logout') }}">Logout</a>
+            </div>
+        </nav>
+
         <!--           FORMULARIO          -->
         <div class="container text-center">
             <div class="row justify-content-center">

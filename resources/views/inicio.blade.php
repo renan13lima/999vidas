@@ -67,7 +67,7 @@
                 </ul>
 
                 <div>
-                    <a class="nav-link" href="{{ url('login') }}">login</a>
+                    <a class="nav-link" href="{{ url('login') }}">Login</a>
                 </div>
             </div>
         </div>
@@ -104,7 +104,7 @@
                                 </a>
                             </div>
                             <div class="carousel-item">
-                                <img src="https://thatdev.neocities.org/milvidas/imgs/post-biblion.webp"
+                                <img src="http://localhost/999vidas/public/images/FeiraAmazon.jpg"
                                     class="d-block w-100" alt="...">
                             </div>
                         </div>

@@ -50,10 +50,16 @@
                 background-color: #deb887;
             }
         </style>
-
     </head>
 
     <body>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container d-flex justify-content-end">
+                <a class="border p-2 mt-2 nav-link fw-bold" href="{{ url('logout') }}">Logout</a>
+            </div>
+        </nav>
+
         <!--  NAVBAR -->
         <section class="text-center">
             <h1 class="pt-5 mb-2">BIBLIOTECA COMPARTILHADA</h1>
