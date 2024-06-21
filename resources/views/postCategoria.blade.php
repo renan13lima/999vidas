@@ -12,8 +12,13 @@
     <!-- Custom CSS -->
     <link href="{{ url('assets/css/home.css') }}" rel="stylesheet" type="text/css" media="all">
 
-    <main id="main">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container d-flex justify-content-end">
+            <a class="border p-2 mt-2 nav-link fw-bold" href="{{ url('logout') }}">Logout</a>
+        </div>
+    </nav>
 
+    <main id="main">
 
         <!--   INICIO    -->
         <div class="container-fluid">
